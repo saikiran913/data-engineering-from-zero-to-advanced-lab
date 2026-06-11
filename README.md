@@ -40,7 +40,9 @@ Over time, this repository will cover:
 | --- | --- | --- |
 | Day 001 | What is Data Engineering? | Available |
 | Day 002 | How Data Flows Inside a Company | Available |
-| Day 003 | Types of Data | Coming soon |
+| Day 003 | Types of Data: Structured, Semi-Structured, and Unstructured | Available |
+| Day 004 | Databases, Data Warehouses, and Data Lakes | Available |
+| Day 005 | ETL and ELT: Moving and Transforming Data | Coming soon |
 
 ## Repository Philosophy
 
@@ -56,7 +58,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001 and Day 002 are available.
+Day 001, Day 002, Day 003, and Day 004 are available.
 
 ## How to Use This Repository
 
