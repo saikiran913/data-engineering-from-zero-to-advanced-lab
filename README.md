@@ -39,7 +39,8 @@ Over time, this repository will cover:
 | Day | Topic | Status |
 | --- | --- | --- |
 | Day 001 | What is Data Engineering? | Available |
-| Day 002 | How Data Flows Inside a Company | Coming soon |
+| Day 002 | How Data Flows Inside a Company | Available |
+| Day 003 | Types of Data | Coming soon |
 
 ## Repository Philosophy
 
@@ -55,7 +56,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001 is available.
+Day 001 and Day 002 are available.
 
 ## How to Use This Repository
 
@@ -65,4 +66,3 @@ Day 001 is available.
 4. Review real-world examples.
 5. Complete the practice questions.
 6. Move to the next day when available.
-
