@@ -1,0 +1,11 @@
+product_id,product_name,category,price,is_active
+P100,Laptop Stand,Electronics,45.00,true
+P101,Wireless Mouse,Electronics,25.50,true
+P102,Cotton Shirt,Clothing,30.00,true
+P103,Desk Lamp,Home,55.75,true
+P104,Data Basics Book,Books,18.99,true
+P105,Running Shoes,Sports,85.00,true
+P106,Old Phone Case,Electronics,9.99,false
+P107,Winter Jacket,Clothing,120.00,true
+P108,Storage Box,Home,22.50,false
+P109,SQL Starter Book,Books,24.99,true

@@ -1,0 +1,13 @@
+customer_id,customer_name,country,signup_date,email,customer_status
+101,Customer A,UK,2026-01-05,customer.a@example.com,Active
+102,Customer B,India,2026-01-12,customer.b@example.com,Active
+103,Customer C,USA,2026-02-03,customer.c@example.com,Pending
+104,Customer D,Canada,2026-02-18,customer.d@example.com,Inactive
+105,Customer E,Germany,2026-03-01,customer.e@example.com,Active
+106,Customer F,Australia,2026-03-14,customer.f@example.com,Active
+107,Customer G,UK,2026-04-02,customer.g@example.com,Inactive
+108,Customer H,India,2026-04-19,customer.h@example.com,Pending
+109,Customer I,USA,2026-05-06,customer.i@example.com,Active
+110,Customer J,Canada,2026-05-21,customer.j@example.com,Active
+111,Customer K,Germany,2026-06-04,customer.k@example.com,Pending
+112,Customer L,Australia,2026-06-15,customer.l@example.com,Inactive

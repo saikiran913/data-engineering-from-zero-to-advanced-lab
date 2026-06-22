@@ -44,7 +44,10 @@ Over time, this repository will cover:
 | Day 004 | Databases, Data Warehouses, and Data Lakes | Available |
 | Day 005 | ETL and ELT: Moving and Transforming Data | Available |
 | Day 006 | Batch Processing vs Real-Time Streaming | Available |
-| Day 007 | Common Data Formats: CSV, JSON, Parquet, Avro, and XML | Coming soon |
+| Day 007 | Common Data Formats: CSV, JSON, Parquet, Avro, and XML | Available |
+| Day 008 | Data Quality Fundamentals: Missing Values, Duplicates, and Validation Checks | Available |
+| Day 009 | Basic SQL for Data Engineers: Tables, SELECT, WHERE, ORDER BY, and LIMIT | Available |
+| Day 010 | SQL Filtering with WHERE, AND, OR, IN, BETWEEN, LIKE, and IS NULL | Coming soon |
 
 ## Repository Philosophy
 
@@ -60,7 +63,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, and Day 006 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, and Day 009 are available.
 
 ## How to Use This Repository
 
