@@ -1,0 +1,16 @@
+customer_id,customer_name,country,city,signup_date,email,customer_status,marketing_opt_in
+101,Customer A,UK,London,2026-01-05,customer.a@example.com,Active,true
+102,Customer B,India,Mumbai,2026-01-12,customer.b@example.com,Active,true
+103,Customer C,USA,New York,2026-02-03,,Pending,false
+104,Customer D,Canada,Toronto,2026-02-18,customer.d@example.com,Inactive,false
+105,Customer E,Germany,Berlin,2026-03-01,customer.e@example.com,Active,true
+106,Customer F,Australia,Sydney,2026-03-14,customer.f@example.com,Active,false
+107,Customer G,UK,,2026-04-02,customer.g@example.com,Inactive,false
+108,Customer H,India,Delhi,2026-04-19,,Pending,true
+109,Customer I,USA,Chicago,2026-05-06,customer.i@gmail.com,Active,true
+110,Customer J,Canada,Vancouver,2026-05-21,customer.j@example.com,Blocked,false
+111,Customer K,Germany,Munich,2026-06-04,customer.k@example.com,Pending,true
+112,Customer L,Australia,Melbourne,2026-06-15,customer.l@example.com,Inactive,false
+113,Customer M,UK,Manchester,2026-06-18,customer.m@gmail.com,Active,true
+114,Customer N,India,,2026-06-20,customer.n@example.com,Blocked,false
+115,Customer O,USA,Boston,2026-06-22,,Active,true

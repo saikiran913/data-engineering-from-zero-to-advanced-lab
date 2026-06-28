@@ -1,0 +1,21 @@
+# Beginner Summary
+
+Aggregation is one of the most important SQL ideas for data engineering. It means taking many detailed rows and turning them into useful summary numbers. A business table may contain thousands or millions of individual rows, but a dashboard or report usually needs simple answers such as total sales, number of orders, average order value, latest order date, or orders by country. Aggregation helps create those answers.
+
+The first aggregation function to understand is `COUNT`. `COUNT` is used when you want to count rows or values. `COUNT(*)` counts all rows returned by a query. If the `orders` table has 30 rows, then `COUNT(*)` returns 30. `COUNT(column_name)` is slightly different. It counts only rows where that column has a non-null value. For example, `COUNT(email)` counts customers who have an email value. If some customer rows have missing email values, those missing values are not counted by `COUNT(email)`. This difference is very important for data quality checks.
+
+`SUM` adds numeric values together. If every order row has an `order_amount`, `SUM(order_amount)` calculates total sales. Data engineers use `SUM` for sales, revenue, cost, budget, impressions, clicks, conversions, quantities, and other numeric metrics. Before using `SUM`, always check that the column is numeric and that the business definition is clear. For example, some reports may include only paid orders, while others may include all orders.
+
+`AVG` calculates the average of numeric values. Average means total divided by count. `AVG(order_amount)` gives the average order amount. This is often called average order value in reporting. Averages are useful, but they should be used carefully. It makes sense to average order amounts or product prices, but it does not make sense to average text values such as status or country.
+
+`MIN` finds the smallest value, and `MAX` finds the largest value. For numbers, `MIN(order_amount)` finds the lowest order amount and `MAX(order_amount)` finds the highest order amount. For dates, `MIN(order_date)` can find the earliest date and `MAX(order_date)` can find the latest date. This is useful for checking data freshness. If the latest order date is older than expected, the pipeline may not have loaded the newest data.
+
+Some aggregation queries return one summary row. For example, counting all orders or calculating total sales for the whole table returns one result. But data engineers often need separate summaries by group. This is where `GROUP BY` is used. `GROUP BY` creates one summary for each unique value in a column. If you group orders by `country`, SQL returns one row per country. If you group products by `category`, SQL returns one row per category. If you group campaign performance by `channel`, SQL returns one row per channel.
+
+`WHERE` can be combined with aggregation. The key idea is that `WHERE` filters rows before grouping happens. For example, if you want paid sales by country, SQL first keeps only rows where `payment_status = 'Paid'`, then groups those rows by country, then calculates `SUM(order_amount)` for each country. This is a natural connection to Day 010, where you learned filtering.
+
+`ORDER BY` can sort aggregated results. If you calculate total sales by country, you can sort by the total sales column in descending order to see the highest-sales countries first. Sorting makes summary results easier to read and more useful for reporting.
+
+Aggregations are everywhere in dashboards. Metrics such as total customers, orders by status, revenue by channel, average order value, campaign cost, and latest data date all come from aggregation logic. Data engineers often prepare these metrics so analysts and business teams can use them reliably.
+
+Aggregations also support data quality. A data engineer may count rows to check whether data arrived, count non-null values to check missing data, sum revenue to compare source and target systems, group by status to detect unusual distributions, and use `MAX(date_column)` to check freshness. Before Day 012, remember this: aggregation summarises rows, `GROUP BY` creates grouped summaries, `WHERE` filters rows before aggregation, and business rules decide which rows should be included in each metric.

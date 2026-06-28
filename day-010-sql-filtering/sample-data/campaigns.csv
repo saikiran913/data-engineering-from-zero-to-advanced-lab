@@ -1,0 +1,13 @@
+campaign_id,campaign_name,channel,country,start_date,end_date,campaign_status,budget
+C001,Summer Sale Search,Search,UK,2026-06-01,2026-06-30,Active,5000
+C002,Winter Promo Social,Social,India,2026-06-05,2026-07-05,Paused,3500
+C003,Email Welcome Series,Email,USA,2026-05-15,,Active,1200
+C004,Affiliate Partner Push,Affiliate,Canada,2026-06-10,2026-07-10,Active,2500
+C005,Display Retargeting Campaign,Display,Germany,2026-06-01,2026-06-25,Completed,4200
+C006,Summer Sale Social,Social,Australia,2026-06-03,2026-06-28,Active,2800
+C007,Search Brand Awareness,Search,USA,2026-06-12,,Paused,6000
+C008,Email Reconnect Campaign,Email,UK,2026-06-15,2026-07-15,Active,900
+C009,Display Product Push,Display,India,2026-06-20,2026-07-20,Cancelled,1500
+C010,Affiliate Summer Push,Affiliate,Germany,2026-06-18,2026-07-18,Completed,3200
+C011,Winter Promo Search,Search,Canada,2026-06-22,,Active,4800
+C012,Email Sale Reminder,Email,Australia,2026-06-25,2026-07-05,Paused,1100

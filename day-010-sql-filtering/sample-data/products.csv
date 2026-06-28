@@ -1,0 +1,13 @@
+product_id,product_name,category,price,is_active,stock_status
+P100,Laptop Stand,Electronics,45.00,true,In Stock
+P101,Wireless Mouse,Electronics,25.50,true,Low Stock
+P102,Bluetooth Speaker,Electronics,65.00,true,In Stock
+P103,Cotton Shirt,Clothing,30.00,true,In Stock
+P104,Desk Lamp,Home,55.75,true,Out of Stock
+P105,Data Engineering Book,Books,32.99,true,In Stock
+P106,Running Shoes,Sports,85.00,true,Low Stock
+P107,Old Phone Case,Electronics,9.99,false,Discontinued
+P108,Storage Box,Home,22.50,false,Discontinued
+P109,SQL Beginner Book,Books,24.99,true,In Stock
+P110,Sports Water Bottle,Sports,18.00,true,In Stock
+P111,Face Cream,Beauty,14.50,true,Out of Stock

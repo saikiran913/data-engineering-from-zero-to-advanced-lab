@@ -1,0 +1,13 @@
+product_id,product_name,category,price,is_active,stock_status
+P001,Wireless Mouse,Electronics,29.99,true,In Stock
+P002,Laptop Stand,Electronics,54.50,true,Low Stock
+P003,Cotton T-Shirt,Clothing,18.00,true,In Stock
+P004,Winter Jacket,Clothing,120.00,false,Discontinued
+P005,Coffee Mug,Home,12.75,true,In Stock
+P006,Desk Lamp,Home,44.90,true,Out of Stock
+P007,SQL Basics Book,Books,24.99,true,In Stock
+P008,Data Guide Book,Books,35.00,true,Low Stock
+P009,Yoga Mat,Sports,32.50,true,In Stock
+P010,Running Shoes,Sports,89.99,false,Discontinued
+P011,Face Cleanser,Beauty,15.50,true,Low Stock
+P012,Hair Dryer,Beauty,64.00,true,Out of Stock
