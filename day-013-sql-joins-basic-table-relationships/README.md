@@ -364,5 +364,5 @@ Day 014 will explain more SQL JOIN practice, including multiple joins, join filt
 ## Navigation
 
 - Previous: [Day 012 - SQL GROUP BY with HAVING and Data Quality Summary Checks](../day-012-sql-group-by-having-data-quality-checks/)
-- Next: Day 014 - SQL JOIN Practice and Common Join Mistakes - Coming Soon
+- Next: [Day 014 - SQL JOIN Practice and Common Join Mistakes](../day-014-sql-join-practice-common-mistakes/)
 - [Back to Main Learning Path](../README.md)

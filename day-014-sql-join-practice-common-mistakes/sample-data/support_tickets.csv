@@ -1,0 +1,19 @@
+ticket_id,customer_id,ticket_date,issue_type,ticket_status
+T001,C001,2026-04-02,Delivery,Resolved
+T002,C002,2026-04-02,Payment,Closed
+T003,C003,2026-04-03,Account,Open
+T004,C004,2026-04-03,Refund,In Progress
+T005,C005,2026-04-04,Product,Resolved
+T006,C006,2026-04-04,Delivery,Closed
+T007,C007,2026-04-05,Payment,Open
+T008,C008,2026-04-05,Product,Resolved
+T009,C009,2026-04-06,Refund,Closed
+T010,C010,2026-04-06,Account,In Progress
+T011,C011,2026-04-07,Delivery,Open
+T012,C012,2026-04-07,Product,Resolved
+T013,C013,2026-04-08,Refund,Closed
+T014,C014,2026-04-08,Payment,Open
+T015,C015,2026-04-09,Account,Resolved
+T016,C999,2026-04-09,Delivery,Open
+T017,C001,2026-04-10,Product,Closed
+T018,C004,2026-04-10,Refund,In Progress
