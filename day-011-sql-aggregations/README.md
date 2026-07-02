@@ -408,5 +408,5 @@ Day 012 will introduce SQL `GROUP BY` with `HAVING` and beginner-level data qual
 ## Navigation
 
 - Previous: [Day 010 - SQL Filtering](../day-010-sql-filtering/)
-- Next: Day 012 - SQL GROUP BY with HAVING and Data Quality Summary Checks - Coming Soon
+- Next: [Day 012 - SQL GROUP BY with HAVING and Data Quality Summary Checks](../day-012-sql-group-by-having-data-quality-checks/)
 - [Back to Main Learning Path](../README.md)

@@ -49,7 +49,9 @@ Over time, this repository will cover:
 | Day 009 | Basic SQL for Data Engineers: Tables, SELECT, WHERE, ORDER BY, and LIMIT | Available |
 | Day 010 | SQL Filtering with WHERE, AND, OR, IN, BETWEEN, LIKE, and IS NULL | Available |
 | Day 011 | SQL Aggregations for Data Engineers: COUNT, SUM, AVG, MIN, MAX, and GROUP BY | Available |
-| Day 012 | SQL GROUP BY with HAVING and Data Quality Summary Checks | Coming soon |
+| Day 012 | SQL GROUP BY with HAVING and Data Quality Summary Checks | Available |
+| Day 013 | SQL JOINs for Data Engineers: INNER JOIN, LEFT JOIN, and Basic Table Relationships | Available |
+| Day 014 | SQL JOIN Practice and Common Join Mistakes | Coming soon |
 
 ## Repository Philosophy
 
@@ -65,7 +67,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, and Day 011 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, and Day 013 are available.
 
 ## How to Use This Repository
 

@@ -1,0 +1,15 @@
+campaign_id,campaign_name,channel,country,start_date,end_date,campaign_status,budget
+CMP101,Spring Search UK,Search,UK,2026-02-01,2026-02-28,Active,2500.00
+CMP102,Social India Launch,Social,India,2026-02-01,2026-02-20,Completed,1800.00
+CMP103,Email USA Promo,Email,USA,2026-02-03,2026-02-25,Active,1200.00
+CMP104,Display Canada Sale,Display,Canada,2026-02-05,2026-02-28,Paused,1600.00
+CMP105,Affiliate Germany Push,Affiliate,Germany,2026-02-06,2026-02-26,Active,1400.00
+CMP106,Search Australia Deals,Search,Australia,2026-02-07,2026-02-27,Completed,2100.00
+CMP107,Social UK Retargeting,Social,UK,2026-02-08,2026-03-01,Active,1700.00
+CMP108,Email India Offers,Email,India,2026-02-09,2026-02-22,Paused,900.00
+CMP109,Display USA Awareness,Display,USA,2026-02-10,2026-03-05,Active,3000.00
+CMP110,Affiliate Canada Trial,Affiliate,Canada,2026-02-11,2026-02-24,Cancelled,700.00
+CMP111,Search Germany Promo,Search,Germany,2026-02-12,2026-03-03,Active,2300.00
+CMP112,Social Australia Growth,Social,Australia,2026-02-13,2026-03-04,Completed,1500.00
+CMP113,Search India Retargeting,Search,India,2026-02-14,2026-03-06,Active,2600.00
+CMP114,Social Canada Loyalty,Social,Canada,2026-02-15,2026-03-07,Active,1450.00

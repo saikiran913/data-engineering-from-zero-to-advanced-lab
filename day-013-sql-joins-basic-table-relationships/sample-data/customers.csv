@@ -1,0 +1,16 @@
+customer_id,customer_name,country,city,signup_date,email,customer_status
+C001,Customer A,UK,London,2026-03-01,customer.a@example.com,Active
+C002,Customer B,India,Bengaluru,2026-03-01,customer.b@example.com,Active
+C003,Customer C,USA,New York,2026-03-02,customer.c@example.com,Pending
+C004,Customer D,Canada,Toronto,2026-03-02,customer.d@example.com,Inactive
+C005,Customer E,Germany,Berlin,2026-03-03,customer.e@example.com,Active
+C006,Customer F,Australia,Sydney,2026-03-03,customer.f@example.com,Blocked
+C007,Customer G,UK,Manchester,2026-03-04,customer.g@example.com,Active
+C008,Customer H,India,Mumbai,2026-03-04,customer.h@example.com,Pending
+C009,Customer I,USA,Chicago,2026-03-05,customer.i@example.com,Inactive
+C010,Customer J,Canada,Vancouver,2026-03-05,customer.j@example.com,Active
+C011,Customer K,Germany,Munich,2026-03-06,customer.k@example.com,Pending
+C012,Customer L,Australia,Melbourne,2026-03-06,customer.l@example.com,Active
+C013,Customer M,UK,Bristol,2026-03-07,customer.m@example.com,Blocked
+C014,Customer N,India,Delhi,2026-03-07,customer.n@example.com,Active
+C015,Customer O,USA,Austin,2026-03-08,customer.o@example.com,Active
