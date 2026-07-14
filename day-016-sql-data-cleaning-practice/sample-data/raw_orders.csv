@@ -1,0 +1,31 @@
+order_id,customer_id,order_date,order_amount,order_status,payment_status,country
+1001,1,2026-01-06,25.00,created,paid,UK
+1002,2,2026-01-13,75.50,shipped,Paid,U.K.
+1003,3,2026-02-04,180.00,delivered, paid ,United Kingdom
+1004,4,2026-02-11,210.99,Delivered,failed,USA
+1005,5,2026-02-19,499.00,cancelled,refunded,U.S.A
+1006,6,2026-03-02,650.00,returned,Refunded,United States
+1007,7,2026-03-09,35.99,created,pending,India
+1008,8,2026-03-16,120.00,shipped,Pending,Canada
+1009,9,2026-03-23,520.00,delivered,paid,Germany
+1010,10,2026-04-03,15.00,cancelled,failed,Australia
+1011,11,2026-04-10,88.00, CREATED ,paid,uk
+1012,12,2026-04-17,320.00,SHIPPED,paid, usa 
+1013,13,2026-04-24,,delivered,paid,
+1014,14,2026-05-02,44.50,unknown,,Spain
+1015,15,2026-05-08,700.00,returned,paid,Canada
+1016,16,2026-05-15,199.99,delivered,paid,India
+1017,17,2026-05-22,200.00,shipped,failed,U.K.
+1018,18,2026-05-29,999.00,delivered,paid,Germany
+1019,19,2026-06-05,49.99,created,pending,United States
+1020,20,2026-06-12,50.00,delivered,paid,Australia
+1021,1,2026-06-14,149.00,Delivered,Paid,UK
+1022,2,2026-06-15,275.00,Cancelled,Refunded,U.K.
+1023,3,2026-06-16,430.00,shipped,paid,United Kingdom
+1024,4,2026-06-17,18.75,created,pending,USA
+1025,5,2026-06-18,1200.00,delivered,paid,U.S.A
+1026,6,2026-06-19,0.00,cancelled,failed,United States
+1027,7,2026-06-20,58.25,created,,India
+1028,8,2026-06-21,310.00,returned,refunded,Canada
+1029,9,2026-06-22,89.99,shipped,paid,Germany
+1030,10,2026-06-23,510.00,delivered,PAID,Australia

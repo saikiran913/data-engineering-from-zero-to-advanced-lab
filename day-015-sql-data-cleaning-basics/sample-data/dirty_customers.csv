@@ -1,0 +1,19 @@
+customer_id,customer_name,country,city,signup_date,email,customer_status
+C001, Customer A ,UK,London,2026-05-01, CUSTOMER.A@EXAMPLE.COM ,Active
+C002,customer b,U.K.,Bengaluru,2026-05-01,customer.b@example.com,active
+C003,CUSTOMER C,United Kingdom,,2026-05-02,CUSTOMER.C@EXAMPLE.COM,ACTIVE
+C004, Customer D,uk,Toronto,2026-05-02, customer.d@example.com ,Inactive
+C005,customer e,India,Delhi,2026-05-03,CUSTOMER.E@EXAMPLE.COM,inactive
+C006, CUSTOMER F ,india,Sydney,2026-05-03,,Pending
+C007,Customer G,USA,Chicago,2026-05-04,customer.g@example.com,pending
+C008,customer h,U.S.A, ,2026-05-04, CUSTOMER.H@EXAMPLE.COM ,Blocked
+C009,CUSTOMER I,United States,Austin,2026-05-05,customer.i@example.com,blocked
+C010, Customer J ,Canada,Vancouver,2026-05-05,customer.j@example.com,
+C011,customer k,Germany,Berlin,2026-05-06, CUSTOMER.K@EXAMPLE.COM ,Active
+C012,CUSTOMER L,Australia,Melbourne,2026-05-06,customer.l@example.com,ACTIVE
+C013, Customer M ,UK,Manchester,2026-05-07, ,Pending
+C014,customer n,India,Mumbai,2026-05-07,CUSTOMER.N@EXAMPLE.COM,active
+C015,CUSTOMER O,USA,New York,2026-05-08,customer.o@example.com,Inactive
+C016, Customer P ,U.K.,,2026-05-08, CUSTOMER.P@EXAMPLE.COM ,blocked
+C017,customer q,United Kingdom,Bristol,2026-05-09,customer.q@example.com,
+C018,CUSTOMER R,india,Hyderabad,2026-05-09,CUSTOMER.R@EXAMPLE.COM,Pending

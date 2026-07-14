@@ -1,0 +1,9 @@
+source_table,raw_column,raw_value,clean_column,clean_value,cleaning_rule
+dirty_customers,country," U.K. ",clean_country,UK,trim spaces and standardise country
+dirty_customers,email," STUDENT@EMAIL.COM ",clean_email,student@email.com,trim spaces and lowercase email
+dirty_products,is_active,Y,clean_is_active,true,standardise boolean-like value
+dirty_products,is_active,N,clean_is_active,false,standardise boolean-like value
+dirty_orders,payment_status,PAID,clean_payment_status,Paid,standardise payment status case
+dirty_campaigns,channel,search,clean_channel,Search,standardise channel case
+dirty_customers,customer_status,active,clean_customer_status,Active,standardise customer status
+dirty_products,category," electronics ",clean_category,Electronics,trim spaces and standardise category

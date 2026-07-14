@@ -230,5 +230,5 @@ Day 015 will introduce SQL Data Cleaning Basics: handling `NULL`s, standardising
 ## Navigation
 
 - Previous: [Day 013 - SQL JOINs for Data Engineers](../day-013-sql-joins-basic-table-relationships/)
-- Next: Day 015 - SQL Data Cleaning Basics - Coming Soon
+- Next: [Day 015 - SQL Data Cleaning Basics](../day-015-sql-data-cleaning-basics/)
 - [Back to Main Learning Path](../README.md)

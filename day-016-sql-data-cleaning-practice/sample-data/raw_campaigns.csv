@@ -1,0 +1,17 @@
+campaign_id,campaign_name,channel,country,campaign_status,budget
+301,"January Search Push",search,UK,active,800
+302,"Social Launch"," Social ",U.K.,Active,2500
+303,"Email Welcome",EMAIL,United Kingdom,paused,1200
+304,"Display Awareness",display,USA,completed,6000
+305,"Affiliate Trial",affiliate,U.S.A,cancelled,950
+306,"Spring Search",Search,United States,active,5100
+307,"India Social",social,India, Active ,4500
+308,"Canada Email",email,Canada,paused,700
+309,"Retargeting Display",DISPLAY,Germany,completed,3200
+310,"Partner Offer",Affiliate,Australia,unknown,1500
+311,"Budget Test",search,uk,active,400
+312,"High Intent", search , usa ,ACTIVE,8000
+313,"Dormant Campaign","",Spain,,300
+314,"Newsletter Boost",email,India,Completed,2200
+315,"Brand Display",display,Canada,Paused,4800
+316,"Final Sale",social,U.K.,cancelled,9000

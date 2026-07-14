@@ -1,0 +1,15 @@
+product_id,product_name,category,price,is_active
+P001, Wireless Mouse ,Electronics,29.99,true
+P002,Laptop Stand,electronics,54.50,TRUE
+P003,KEYBOARD,ELECTRONICS,72.00,Yes
+P004, Cotton T-Shirt ,Clothing,18.00,Y
+P005,Winter Jacket,clothing,120.00,false
+P006,Coffee Mug,Home,12.75,FALSE
+P007, Desk Lamp ,home,44.90,No
+P008,SQL Basics Book,Books,24.99,N
+P009, Data Guide Book ,books,35.00,true
+P010,Yoga Mat,Sports,32.50,TRUE
+P011,Face Cleanser,Beauty,15.50,Yes
+P012, Hair Dryer ,beauty,64.00,
+P013,Notebook Set,,9.99,Y
+P014,Training Gloves, ,41.00,N

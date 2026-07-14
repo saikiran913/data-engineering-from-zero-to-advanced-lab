@@ -1,0 +1,21 @@
+customer_id,customer_name,signup_date,signup_datetime,country,customer_status
+1,Customer 001,2026-05-20,2026-05-20 09:00:00,UK,Active
+2,Customer 002,2026-05-22,2026-05-22 10:10:00,USA,Active
+3,Customer 003,2026-05-25,2026-05-25 11:30:00,India,Pending
+4,Customer 004,2026-05-28,2026-05-28 14:45:00,Canada,Inactive
+5,Customer 005,2026-06-01,2026-06-01 08:20:00,Germany,Active
+6,Customer 006,2026-06-03,2026-06-03 09:35:00,Australia,Blocked
+7,Customer 007,2026-06-05,2026-06-05 12:15:00,UK,Active
+8,Customer 008,2026-06-07,2026-06-07 13:40:00,USA,Inactive
+9,Customer 009,2026-06-10,2026-06-10 15:25:00,India,Active
+10,Customer 010,2026-06-12,2026-06-12 16:50:00,Canada,Pending
+11,Customer 011,2026-06-15,2026-06-15 09:05:00,Germany,Active
+12,Customer 012,2026-06-18,2026-06-18 10:30:00,Australia,Active
+13,Customer 013,2026-06-21,2026-06-21 11:55:00,UK,Blocked
+14,Customer 014,2026-06-24,2026-06-24 12:35:00,USA,Active
+15,Customer 015,2026-06-27,2026-06-27 14:20:00,India,Inactive
+16,Customer 016,2026-07-01,2026-07-01 08:45:00,Canada,Active
+17,Customer 017,2026-07-03,2026-07-03 09:55:00,Germany,Pending
+18,Customer 018,2026-07-05,2026-07-05 13:10:00,Australia,Active
+19,Customer 019,2026-07-07,2026-07-07 17:30:00,UK,Inactive
+20,Customer 020,,2026-07-08 10:15:00,USA,Pending

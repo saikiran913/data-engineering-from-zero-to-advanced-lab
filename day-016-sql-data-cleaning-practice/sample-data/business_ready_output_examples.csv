@@ -1,0 +1,11 @@
+source_table,raw_columns,business_ready_columns,business_rule,example_output
+raw_customers,"country, customer_status","clean_country, clean_customer_status","Map known country and status variants to standard labels; use Unknown for unexpected values","UK, Active"
+raw_customers,"marketing_opt_in","clean_marketing_opt_in","Map yes/Y/true to true; no/N/false to false; otherwise unknown","true"
+raw_orders,"order_amount","order_value_band","Amounts below 50 are Low; 50 to 199.99 Medium; 200 to 499.99 High; 500 or more Premium","Premium"
+raw_orders,"order_status, payment_status","order_health_label","Paid and shipped or delivered orders are Healthy; failed payments are Payment Issue; cancelled or returned orders Need Review","Payment Issue"
+raw_products,"price","product_price_band","Prices below 20 are Low; 20 to 99.99 Medium; 100 to 299.99 High; 300 or more Premium","High"
+raw_products,"is_active","clean_is_active","Map yes/Y/true to true; no/N/false to false; otherwise unknown","false"
+raw_campaigns,"channel","clean_channel","Map channel spellings to Search, Social, Email, Display, Affiliate, or Unknown","Social"
+raw_campaigns,"budget","campaign_budget_band","Budgets below 1000 are Small; 1000 to 4999.99 Medium; 5000 or more Large","Large"
+raw_campaign_performance,"cost, revenue","performance_label","Revenue greater than cost is Profitable; equal is Break Even; zero revenue is No Revenue; otherwise Needs Review","Profitable"
+raw_campaign_performance,"conversions","conversion_label","Zero is No Conversions; 1 to 5 Low; 6 to 20 Medium; above 20 High","High Conversions"

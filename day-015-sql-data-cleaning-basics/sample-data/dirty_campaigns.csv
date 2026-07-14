@@ -1,0 +1,15 @@
+campaign_id,campaign_name,channel,country,campaign_status,budget
+CMP501, Spring Search UK ,Search,UK,Active,2500.00
+CMP502,Social India Launch,social,India,completed,1800.00
+CMP503, Email USA Promo ,EMAIL,USA,ACTIVE,1200.00
+CMP504,Display Canada Sale,display,Canada,Paused,1600.00
+CMP505,Affiliate Germany Push,Affiliate,Germany,active,1400.00
+CMP506, Search Australia Deals ,SEARCH,Australia,Completed,2100.00
+CMP507,Social UK Retargeting,Social,U.K.,Active,1700.00
+CMP508, Email India Offers ,Email,india,paused,900.00
+CMP509,Display USA Awareness,Display,U.S.A,ACTIVE,3000.00
+CMP510,Affiliate Canada Trial,affiliate,Canada,Cancelled,700.00
+CMP511,Search Germany Promo,Search,Germany,active,2300.00
+CMP512, Social Australia Growth ,social,Australia,completed,1500.00
+CMP513,Email Canada Renewal,,Canada,,850.00
+CMP514, Display Germany Awareness , ,Germany,paused,950.00

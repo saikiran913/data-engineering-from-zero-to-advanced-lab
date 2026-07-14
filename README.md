@@ -52,7 +52,10 @@ Over time, this repository will cover:
 | Day 012 | SQL GROUP BY with HAVING and Data Quality Summary Checks | Available |
 | Day 013 | SQL JOINs for Data Engineers: INNER JOIN, LEFT JOIN, and Basic Table Relationships | Available |
 | Day 014 | SQL JOIN Practice and Common Join Mistakes | Available |
-| Day 015 | SQL Data Cleaning Basics: NULLs, Text Standardisation, and Clean Columns | Coming soon |
+| Day 015 | SQL Data Cleaning Basics: NULLs, Text Standardisation, and Clean Columns | Available |
+| Day 016 | SQL Data Cleaning Practice: CASE Expressions, Derived Columns, and Business-Ready Outputs | Available |
+| Day 017 | SQL Dates for Data Engineers: Date Filters, Date Parts, Freshness Checks, and Daily Reporting | Available |
+| Day 018 | SQL Date Practice: Monthly Reporting, Date-Based Data Quality Checks, and Period Comparisons | Coming soon |
 
 ## Repository Philosophy
 
@@ -68,7 +71,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, and Day 014 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, and Day 017 are available.
 
 ## How to Use This Repository
 

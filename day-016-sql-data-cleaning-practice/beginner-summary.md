@@ -1,0 +1,19 @@
+# Beginner Summary
+
+Day 016 is about using SQL to make raw data easier for people to understand. In real data work, source tables often contain values that are technically stored in a database but are not ready for reporting. A customer status might appear as `active`, ` Active `, `ACTIVE`, or even a blank value. A country might appear as `UK`, `U.K.`, or `United Kingdom`. These values may look obvious to a human, but a report will treat them as different unless we write logic to standardise them.
+
+The main tool for this day is the `CASE` expression. A `CASE` expression lets SQL check one or more conditions and return a value based on the first matching condition. The basic shape is `CASE`, then one or more `WHEN` conditions, a `THEN` result for each condition, an optional `ELSE` fallback, and `END` to close the expression. A simple example is: when the customer status is active, return `Active`; otherwise return `Unknown`. The `ELSE` part is important because it gives the query a clear answer when none of the known rules match.
+
+`CASE` is especially useful for cleaning text values. You can combine it with functions from previous days, such as `TRIM`, `LOWER`, `UPPER`, and `COALESCE`. For example, `LOWER(TRIM(customer_status))` helps compare status values after removing extra spaces and making the text lowercase. This means ` Active ` and `ACTIVE` can both match the same rule. The query does not change the source table. It only returns a cleaner result set.
+
+Day 016 also introduces derived columns. A derived column is a new output column created from one or more existing columns. If an order amount is 25, the derived column might label it as `Low`. If the amount is 650, the derived column might label it as `Premium`. The original amount still exists, but the new label helps business users understand the data faster. Derived columns are common in reporting, dashboards, quality checks, and spreadsheet exports.
+
+Numeric bands are one of the easiest derived column examples. You can create amount bands, price bands, or budget bands. An order can be labelled as `Low`, `Medium`, `High`, or `Premium`. A product can be labelled by price range. A campaign can be labelled as `Small`, `Medium`, or `Large` based on budget. These labels are not universal truths. They are business rules, so the thresholds should be documented and agreed with the people who use the report.
+
+You also practised business labels such as order health, campaign performance, and conversion labels. These labels combine cleaning logic with business meaning. For example, a campaign row where revenue is greater than cost can be labelled `Profitable`, while a row with zero revenue can be labelled `No Revenue`. These labels help readers focus on what needs attention.
+
+A key lesson is the difference between raw columns, clean columns, and business-ready columns. Raw columns show the original source values. Clean columns standardise messy values, such as country or status names. Business-ready columns go one step further and add meaning, such as `Premium Order`, `Marketing Eligible`, or `Needs Review`. Good outputs often include clear aliases so the column names explain what the data means.
+
+Documentation matters. If a query maps several country spellings to `UK`, someone should be able to see that rule. If an order over 500 is called `Premium`, the query or notes should explain that threshold. Without documentation, business logic becomes hard to trust.
+
+Before moving to Day 017, remember this: `CASE` helps you turn messy or detailed values into cleaner, clearer labels. It is safe to practise with `SELECT` because you are producing output without changing the source tables. Always include a fallback value, review unknown results, use clear column names, and keep the business meaning of each rule visible.

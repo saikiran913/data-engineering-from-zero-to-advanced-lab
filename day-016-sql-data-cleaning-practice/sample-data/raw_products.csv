@@ -1,0 +1,17 @@
+product_id,product_name,category,price,is_active,stock_status
+201," Starter Keyboard ","electronics",18.99,yes,in stock
+202,"Noise Headphones"," Electronics ",89.50,Y,low stock
+203,"Laptop Stand","ELECTRONICS",125.00,true,In Stock
+204,"Data Book","books",14.99,yes,in stock
+205,"SQL Workbook"," Books ",24.99,true,low stock
+206,"Desk Lamp","home",42.00,Y,out of stock
+207,"Office Chair","HOME",180.00,true,in stock
+208,"Training Hoodie","clothing",55.00,no,discontinued
+209,"Running Shoes","sports",110.00,yes,low stock
+210,"Yoga Mat"," Sports ",22.50,true,in stock
+211,"Face Cream","beauty",19.99,Y,in stock
+212,"Premium Monitor","electronics",399.99,yes,In Stock
+213,"Notebook Pack","books",8.99,false,out of stock
+214,"Standing Desk","home",520.00,true,low stock
+215,"Mystery Box","",15.00,maybe,unknown
+216,"Travel Jacket","clothing",240.00,N,out of stock

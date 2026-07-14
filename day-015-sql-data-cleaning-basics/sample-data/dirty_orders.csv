@@ -1,0 +1,26 @@
+order_id,customer_id,order_date,order_amount,order_status,payment_status,country
+O5001,C001,2026-05-01,125.50,Delivered,Paid,UK
+O5002,C002,2026-05-01,42.99, shipped ,paid,uk
+O5003,C003,2026-05-01,610.00,CREATED,Pending,United Kingdom
+O5004,C004,2026-05-02,89.75,delivered,PAID,Canada
+O5005,C005,2026-05-02,735.20,Delivered,Paid,Germany
+O5006,C006,2026-05-02,28.50, cancelled ,Failed,Australia
+O5007,C007,2026-05-03,215.00,Shipped,paid,USA
+O5008,C008,2026-05-03,540.40,DELIVERED,,U.S.A
+O5009,C009,2026-05-03,19.99,Returned,refunded,United States
+O5010,C010,2026-05-04,320.00, delivered ,Paid,Canada
+O5011,C011,2026-05-04,,Created,pending,Germany
+O5012,C012,2026-05-04,880.00,Delivered,PAID,Australia
+O5013,C013,2026-05-05,45.00,Cancelled,Refunded,UK
+O5014,C014,2026-05-05,158.35,delivered,paid,India
+O5015,C015,2026-05-05,510.10, SHIPPED ,Paid,USA
+O5016,C001,2026-05-06,72.25,Delivered,PAID, 
+O5017,C002,2026-05-06,990.00,delivered,Paid,india
+O5018,C003,2026-05-06,33.80,CANCELLED,failed,USA
+O5019,C004,2026-05-07,405.60,Shipped,Pending,Canada
+O5020,C005,2026-05-07,58.00,Delivered,Paid,Germany
+O5021,C006,2026-05-07,,Created,,Australia
+O5022,C007,2026-05-08,140.00,delivered,paid,uk
+O5023,C008,2026-05-08,27.95,Returned,Refunded,India
+O5024,C009,2026-05-08,299.99,Delivered,Paid,
+O5025,C010,2026-05-09,555.55, delivered ,PAID,United Kingdom
