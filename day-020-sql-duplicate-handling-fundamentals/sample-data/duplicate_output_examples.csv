@@ -1,0 +1,13 @@
+example_name,duplicate_type,example_values,safe_action,important_note
+exact_duplicate_row,exact duplicate,same values in every selected column,investigate source then decide,may come from file loaded twice
+duplicate_business_key,business key duplicate,same order_id appears more than once,compare values and business rules,not always safe to remove
+normal_repeated_customer,normal repetition,same customer_id has multiple orders,do not deduplicate,one-to-many relationship is expected
+repeated_event_user,normal repetition,same user_id has multiple events,do not deduplicate,user activity creates many rows
+repeated_transaction_id,suspicious repetition,same transaction_id appears more than once,inspect payment status and source file,transaction_id is often expected unique
+changed_order_status,business key duplicate,same order_id with changed order_status,investigate correction logic,may represent late-arriving update
+changed_payment_status,business key duplicate,same transaction_id with changed status,ask payment owner,failed then paid may be valid correction
+cleaned_email_duplicate,cleaned duplicate,same email after trim and lowercase,review contact ownership,case and spaces can hide repeats
+campaign_composite_duplicate,composite key duplicate,same campaign/date/channel/country,compare metrics and source file,metrics may be duplicated or corrected
+retry_file_duplicate,source duplicate,row appears in retry file,flag for review,retry loads can duplicate records
+union_all_duplicate,raw ingestion duplicate,row preserved after stacking files,keep visible for investigation,do not hide raw issues too early
+join_repetition,normal repetition,customer appears once per order,do not deduplicate,relationship grain explains repetition

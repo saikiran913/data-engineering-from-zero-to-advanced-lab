@@ -1,0 +1,36 @@
+pipeline_name,run_date,run_timestamp,status,records_processed,source_file_date,completed_at
+orders_daily_load,2026-05-31,2026-05-31 07:00:00,Success,1500,2026-05-30,2026-05-31 07:08:00
+campaign_performance_load,2026-05-31,2026-05-31 07:15:00,Success,5200,2026-05-30,2026-05-31 07:28:00
+website_events_load,2026-05-31,2026-05-31 07:30:00,Success,9000,2026-05-30,2026-05-31 07:45:00
+daily_sales_summary_build,2026-05-31,2026-05-31 08:00:00,Success,30,2026-05-30,2026-05-31 08:06:00
+monthly_sales_summary_build,2026-05-31,2026-05-31 08:30:00,Success,6,2026-05-31,2026-05-31 08:40:00
+monthly_campaign_summary_build,2026-05-31,2026-05-31 08:45:00,Success,8,2026-05-31,2026-05-31 08:55:00
+orders_daily_load,2026-06-30,2026-06-30 07:00:00,Success,1700,2026-06-29,2026-06-30 07:09:00
+campaign_performance_load,2026-06-30,2026-06-30 07:15:00,Success,6100,2026-06-29,2026-06-30 07:29:00
+website_events_load,2026-06-30,2026-06-30 07:30:00,Success,10400,2026-06-29,2026-06-30 07:48:00
+daily_sales_summary_build,2026-06-30,2026-06-30 08:00:00,Success,36,2026-06-29,2026-06-30 08:07:00
+monthly_sales_summary_build,2026-06-30,2026-06-30 08:30:00,Success,6,2026-06-30,2026-06-30 08:42:00
+monthly_campaign_summary_build,2026-06-30,2026-06-30 08:45:00,Success,10,2026-06-30,2026-06-30 08:58:00
+orders_daily_load,2026-07-31,2026-07-31 07:00:00,Success,800,2026-07-30,2026-07-31 07:08:00
+campaign_performance_load,2026-07-31,2026-07-31 07:15:00,Success,3300,2026-07-30,2026-07-31 07:26:00
+website_events_load,2026-07-31,2026-07-31 07:30:00,Success,7200,2026-07-30,2026-07-31 07:44:00
+daily_sales_summary_build,2026-07-31,2026-07-31 08:00:00,Success,28,2026-07-30,2026-07-31 08:05:00
+monthly_sales_summary_build,2026-07-31,2026-07-31 08:30:00,Failed,0,2026-07-31,
+monthly_campaign_summary_build,2026-07-31,2026-07-31 08:45:00,Success,10,2026-07-31,2026-07-31 09:00:00
+orders_daily_load,2026-08-31,2026-08-31 07:00:00,Success,1650,2026-08-30,2026-08-31 07:10:00
+campaign_performance_load,2026-08-31,2026-08-31 07:15:00,Success,5900,2026-08-30,2026-08-31 07:30:00
+website_events_load,2026-08-31,2026-08-31 07:30:00,Success,9700,2026-08-30,2026-08-31 07:46:00
+daily_sales_summary_build,2026-08-31,2026-08-31 08:00:00,Success,34,2026-08-30,2026-08-31 08:08:00
+monthly_sales_summary_build,2026-08-31,2026-08-31 08:30:00,Success,6,2026-08-31,2026-08-31 08:43:00
+monthly_campaign_summary_build,2026-08-31,2026-08-31 08:45:00,Skipped,0,2026-08-31,
+orders_daily_load,2026-09-05,2026-09-05 07:00:00,Success,200,2026-09-04,2026-09-05 07:05:00
+campaign_performance_load,2026-09-05,2026-09-05 07:15:00,Running,0,2026-09-04,
+website_events_load,2026-09-05,2026-09-05 07:30:00,Success,1500,2026-09-04,2026-09-05 07:38:00
+daily_sales_summary_build,2026-09-05,2026-09-05 08:00:00,Failed,0,2026-09-04,
+monthly_sales_summary_build,2026-09-05,2026-09-05 08:30:00,Skipped,0,2026-08-31,
+monthly_campaign_summary_build,2026-09-05,2026-09-05 08:45:00,Skipped,0,2026-08-31,
+orders_daily_load,2026-09-06,2026-09-06 07:00:00,Success,0,2026-09-05,2026-09-06 07:04:00
+campaign_performance_load,2026-09-06,2026-09-06 07:15:00,Failed,0,2026-09-05,
+website_events_load,2026-09-06,2026-09-06 07:30:00,Success,1200,,2026-09-06 07:39:00
+daily_sales_summary_build,2026-09-06,2026-09-06 08:00:00,Running,0,2026-09-05,
+monthly_sales_summary_build,2026-09-06,2026-09-06 08:30:00,Skipped,0,2026-08-31,

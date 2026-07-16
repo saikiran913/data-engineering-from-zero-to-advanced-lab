@@ -464,10 +464,10 @@ A shop records sales every day. At the end of the day, the owner checks total sa
 
 ## Next Day Preview
 
-Day 018 will practise monthly reporting, date-based data quality checks, and period comparisons.
+Day 018 practises monthly reporting, date-based data quality checks, and period comparisons.
 
 ## Navigation
 
 - Previous: [Day 016 - SQL Data Cleaning Practice](../day-016-sql-data-cleaning-practice/)
-- Next: Day 018 - SQL Date Practice and Period Reporting - Coming Soon
+- Next: [Day 018 - SQL Date Practice and Period Reporting](../day-018-sql-date-practice-period-reporting/)
 - [Back to Main Learning Path](../README.md)

@@ -1,0 +1,26 @@
+contact_id,customer_id,email,phone,country,contact_status,updated_date
+CT001,C001,user1@example.com,555-0101,UK,Active,2026-01-05
+CT002,C002,shared@example.com,555-0102,India,Active,2026-01-06
+CT003,C003,USER3@EXAMPLE.COM,555-0103,USA,Active,2026-01-07
+CT004,C003,user3@example.com,555-0199,USA,Active,2026-01-12
+CT005,C004, user4@example.com ,555-0104,Canada,Inactive,2026-01-08
+CT006,C005,user5@example.com,555-0105,Germany,Active,2026-01-09
+CT007,C006,,555-0106,Australia,Pending,2026-01-10
+CT008,C007,shared@example.com,555-0107,UK,Active,2026-01-11
+CT009,C008,user8@example.com,555-0108,India,Blocked,2026-01-12
+CT010,C009,user9@example.com,555-0109,USA,Active,2026-01-13
+CT011,C010,user10@example.com,555-0110,Canada,Active,2026-01-14
+CT012,C010,user10.alt@example.com,555-0120,Canada,Active,2026-02-01
+CT013,C011,USER11@EXAMPLE.COM,555-0111,Germany,Inactive,2026-02-02
+CT014,C012,user11@example.com,555-0112,Australia,Active,2026-02-03
+CT015,C013,user13@example.com,555-0113,UK,Pending,2026-02-04
+CT016,C014, user14@example.com,555-0114,India,Active,2026-02-05
+CT017,C015,user14@example.com ,555-0115,USA,Active,2026-02-06
+CT018,C016,user16@example.com,555-0116,Canada,Active,2026-02-07
+CT019,C017,,555-0117,Germany,Pending,2026-02-08
+CT020,C018,user18@example.com,555-0118,Australia,Active,2026-02-09
+CT021,C019,shared@example.com,555-0119,UK,Inactive,2026-02-10
+CT022,C020,user20@example.com,555-0121,India,Active,2026-02-11
+CT023,C021,user21@example.com,555-0122,USA,Active,2026-02-12
+CT024,C022,USER22@EXAMPLE.COM,555-0123,Canada,Active,2026-02-13
+CT025,C022,user22@example.com,555-0124,Canada,Active,2026-02-14
