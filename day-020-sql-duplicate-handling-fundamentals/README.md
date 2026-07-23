@@ -278,10 +278,10 @@ Removing duplicates safely often requires more advanced SQL and business-specifi
 
 ## Next Day Preview
 
-Day 021 will introduce SQL safe deduplication practice: `ROW_NUMBER` concept, keeping latest records, and duplicate resolution patterns.
+Day 021 introduces SQL safe deduplication practice: `ROW_NUMBER` concept, keeping latest records, and duplicate resolution patterns.
 
 ## Navigation
 
 - Previous: [Day 019 - SQL UNION and UNION ALL for Data Engineers](../day-019-sql-union-and-union-all/)
-- Next: Day 021 - SQL Safe Deduplication Practice - Coming Soon
+- Next: [Day 021 - SQL Safe Deduplication Practice](../day-021-sql-safe-deduplication-practice/)
 - [Back to Main Learning Path](../README.md)

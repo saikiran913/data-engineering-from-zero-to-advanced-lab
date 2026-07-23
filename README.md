@@ -58,7 +58,10 @@ Over time, this repository will cover:
 | Day 018 | SQL Date Practice: Monthly Reporting, Date-Based Data Quality Checks, and Period Comparisons | Available |
 | Day 019 | SQL UNION and UNION ALL for Data Engineers: Combining Similar Datasets | Available |
 | Day 020 | SQL Duplicate Handling Fundamentals: DISTINCT, Duplicate Investigation, Business Keys, and Safe Deduplication Thinking | Available |
-| Day 021 | SQL Safe Deduplication Practice: ROW_NUMBER Concept, Keeping Latest Records, and Duplicate Resolution Patterns | Coming soon |
+| Day 021 | SQL Safe Deduplication Practice: ROW_NUMBER Concept, Keeping Latest Records, and Duplicate Resolution Patterns | Available |
+| Day 022 | [SQL Subqueries for Data Engineers: Filtering, Validation, and Step-by-Step Query Building](day-022-sql-subqueries-for-data-engineers/) | Available |
+| Day 023 | [SQL Common Table Expressions for Data Engineers: Readable Query Steps, Reusable Logic, and Validation Workflows](day-023-sql-common-table-expressions/) | Available |
+| Day 024 | SQL Window Functions for Data Engineers: RANK, DENSE_RANK, and Group-Based Analysis | Coming Soon |
 
 ## Repository Philosophy
 
@@ -74,7 +77,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, and Day 020 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, and Day 023 are available.
 
 ## How to Use This Repository
 

@@ -1,0 +1,18 @@
+customer_id,email,phone_number,contact_status,updated_date,loaded_at,source_file
+CUST-001,contact001@example.com,555-0101,ACTIVE,2026-03-01,2026-03-01 09:00:00,contacts_day_1.csv
+CUST-001,contact001.new@example.com,555-0101,ACTIVE,2026-03-05,2026-03-05 09:00:00,contacts_day_5.csv
+CUST-002,contact002@example.com,555-0102,ACTIVE,2026-03-02,2026-03-02 09:00:00,contacts_day_2.csv
+CUST-002,contact002@example.com,555-0199,ACTIVE,2026-03-04,2026-03-04 09:00:00,contacts_day_4.csv
+CUST-003,contact003@example.com,,ACTIVE,2026-03-03,2026-03-03 09:00:00,contacts_day_3.csv
+CUST-003,contact003@example.com,555-0103,ACTIVE,2026-03-03,2026-03-03 10:00:00,contacts_retry.csv
+CUST-004,contact004@example.com,555-0104,INACTIVE,2026-03-04,2026-03-04 09:00:00,contacts_day_4.csv
+CUST-004,contact004@example.com,,ACTIVE,2026-03-04,2026-03-04 09:05:00,contacts_retry.csv
+CUST-005,contact005@example.com,555-0105,ACTIVE,2026-03-05,2026-03-05 09:00:00,contacts_day_5.csv
+CUST-006,contact006@example.com,555-0106,ACTIVE,2026-03-06,2026-03-06 09:00:00,contacts_day_6.csv
+CUST-006,contact006.alt@example.com,555-0106,ACTIVE,2026-03-08,2026-03-08 09:00:00,contacts_day_8.csv
+CUST-007,contact007@example.com,,PENDING,2026-03-07,2026-03-07 09:00:00,contacts_day_7.csv
+CUST-008,contact008@example.com,555-0108,ACTIVE,2026-03-08,2026-03-08 09:00:00,contacts_day_8.csv
+CUST-008,contact008@example.com,555-0188,ACTIVE,2026-03-09,2026-03-09 09:00:00,contacts_day_9.csv
+CUST-009,contact009@example.com,,ACTIVE,2026-03-09,2026-03-09 09:10:00,contacts_day_9.csv
+CUST-009,contact009@example.com,555-0109,ACTIVE,2026-03-09,2026-03-09 09:30:00,contacts_retry.csv
+CUST-010,contact010@example.com,555-0110,ACTIVE,2026-03-10,2026-03-10 09:00:00,contacts_day_10.csv

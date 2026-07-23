@@ -1,0 +1,16 @@
+campaign_id,performance_date,channel,country,impressions,clicks,spend,loaded_at,source_file
+CMP-1001,2026-03-01,Search,GB,10000,420,300.00,2026-03-02 07:00:00,campaign_day_1.csv
+CMP-1001,2026-03-01,Search,GB,10200,430,305.00,2026-03-02 09:00:00,campaign_corrections.csv
+CMP-1002,2026-03-01,Social,FR,15000,620,520.00,2026-03-02 07:10:00,campaign_day_1.csv
+CMP-1002,2026-03-01,Social,FR,15000,625,520.00,2026-03-02 07:10:00,campaign_retry.csv
+CMP-1003,2026-03-02,Display,DE,22000,300,900.00,2026-03-03 07:00:00,campaign_day_2.csv
+CMP-1004,2026-03-02,Search,GB,8000,310,240.00,2026-03-03 07:05:00,campaign_day_2.csv
+CMP-1004,2026-03-02,Search,GB,8200,315,245.00,2026-03-03 08:05:00,campaign_corrections.csv
+CMP-1005,2026-03-03,Social,DE,12000,500,430.00,2026-03-04 07:00:00,campaign_day_3.csv
+CMP-1006,2026-03-03,Display,FR,18000,260,780.00,2026-03-04 07:05:00,campaign_day_3.csv
+CMP-1006,2026-03-03,Display,FR,18000,260,780.00,2026-03-04 07:05:00,campaign_retry.csv
+CMP-1007,2026-03-04,Search,DE,9000,340,260.00,2026-03-05 07:00:00,campaign_day_4.csv
+CMP-1007,2026-03-04,Search,DE,9300,355,270.00,2026-03-05 08:00:00,campaign_corrections.csv
+CMP-1008,2026-03-04,Social,GB,14000,610,500.00,2026-03-05 07:05:00,campaign_day_4.csv
+CMP-1009,2026-03-05,Display,FR,20000,280,840.00,2026-03-06 07:00:00,campaign_day_5.csv
+CMP-1009,2026-03-05,Display,FR,20100,282,845.00,2026-03-06 07:00:00,campaign_retry.csv

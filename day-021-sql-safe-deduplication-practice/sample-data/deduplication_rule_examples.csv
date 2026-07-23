@@ -1,0 +1,7 @@
+scenario_id,dataset_name,business_key,duplicate_reason,recommended_rule,tie_breaker,review_required,reason_for_review
+RULE-001,raw_orders_duplicate_versions,order_id,status updates,keep latest updated_at,loaded_at,No,latest version represents current order state
+RULE-002,customer_contacts_versions,customer_id,contact updates,keep latest updated_date,loaded_at,Yes,latest record may have missing phone number
+RULE-003,payment_transaction_versions,transaction_id,payment retries,prefer SUCCESS status,updated_at then loaded_at,Yes,inconsistent payment amount requires review
+RULE-004,website_event_versions,event_id,event retry,keep earliest event_timestamp,received_at,Yes,conflicting event names require review
+RULE-005,campaign_performance_versions,campaign_id+performance_date+channel+country,file reloads,keep latest loaded_at,source_file,No,later file usually contains corrected metrics
+RULE-006,campaign_performance_versions,campaign_id+performance_date+channel+country,same-load conflict,flag for manual review,none,Yes,same loaded_at with different metrics

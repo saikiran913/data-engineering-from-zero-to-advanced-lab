@@ -1,0 +1,16 @@
+customer_id,customer_name,country,customer_status,signup_date
+C001,Customer A,UK,ACTIVE,2024-01-12
+C002,Customer B,India,ACTIVE,2024-02-05
+C003,Customer C,USA,ACTIVE,2024-03-18
+C004,Customer D,UK,INACTIVE,2023-11-20
+C005,Customer E,India,ACTIVE,2024-04-22
+C006,Customer F,USA,ACTIVE,2024-05-09
+C007,Customer G,Canada,INACTIVE,2023-09-15
+C008,Customer H,UK,ACTIVE,2024-06-01
+C009,Customer I,India,ACTIVE,2024-06-14
+C010,Customer J,USA,INACTIVE,2023-12-30
+C011,Customer K,Germany,ACTIVE,2024-07-04
+C012,Customer L,UK,ACTIVE,2024-07-18
+C013,Customer M,India,INACTIVE,2023-10-02
+C014,Customer N,USA,ACTIVE,2024-08-11
+C015,Customer O,Canada,ACTIVE,2024-08-29

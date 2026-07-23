@@ -1,0 +1,13 @@
+product_id,product_name,category,unit_price,product_status
+PR001,Product A,Storage,25.00,ACTIVE
+PR002,Product B,Compute,120.00,ACTIVE
+PR003,Product C,Analytics,250.00,ACTIVE
+PR004,Product D,Security,80.00,ACTIVE
+PR005,Product E,Storage,15.00,INACTIVE
+PR006,Product F,Compute,450.00,ACTIVE
+PR007,Product G,Analytics,600.00,ACTIVE
+PR008,Product H,Support,35.00,ACTIVE
+PR009,Product I,Security,95.00,INACTIVE
+PR010,Product J,Training,180.00,ACTIVE
+PR011,Product K,Training,65.00,ACTIVE
+PR012,Product L,Archive,12.00,INACTIVE
