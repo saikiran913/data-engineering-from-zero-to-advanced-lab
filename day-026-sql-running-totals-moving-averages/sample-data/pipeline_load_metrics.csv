@@ -1,0 +1,15 @@
+pipeline_name,load_date,records_received,records_loaded,records_rejected,load_duration_minutes
+orders_pipeline,2024-11-01,10000,9900,100,45
+orders_pipeline,2024-11-02,12000,11880,120,50
+orders_pipeline,2024-11-04,9000,8800,200,48
+orders_pipeline,2024-11-05,0,0,0,10
+orders_pipeline,2024-11-06,13000,12850,150,
+payments_pipeline,2024-11-01,8000,7900,100,38
+payments_pipeline,2024-11-02,8200,8100,100,40
+payments_pipeline,2024-11-03,7900,7800,100,37
+payments_pipeline,2024-11-05,8500,8350,150,42
+events_pipeline,2024-11-01,50000,49800,200,70
+events_pipeline,2024-11-02,52000,51700,300,75
+events_pipeline,2024-11-03,51000,50800,200,72
+events_pipeline,2024-11-04,53000,52750,250,76
+events_pipeline,2024-11-05,54000,53700,300,78

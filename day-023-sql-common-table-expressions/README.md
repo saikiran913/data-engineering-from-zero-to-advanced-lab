@@ -96,5 +96,5 @@ Exact CTE syntax is widely supported, but behaviour and optimisation may vary ac
 ## Navigation
 
 - Previous: [Day 022 - SQL Subqueries for Data Engineers](../day-022-sql-subqueries-for-data-engineers/)
-- Next: Day 024 - SQL Window Functions for Data Engineers - Coming Soon
+- Next: [Day 024 - SQL Window Functions for Data Engineers](../day-024-sql-window-functions-ranking/)
 - [Back to Main Learning Path](../README.md)

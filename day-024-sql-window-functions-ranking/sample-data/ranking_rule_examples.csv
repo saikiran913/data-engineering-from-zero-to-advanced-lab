@@ -1,0 +1,11 @@
+scenario_id,dataset_name,business_question,partition_columns,order_columns,recommended_function,tie_policy,review_required
+RR001,customer_sales,Choose exactly one highest-value customer per country,country,"total_sales DESC,total_orders DESC,customer_id",ROW_NUMBER,Documented tie-breaker chooses one row,Yes
+RR002,product_sales,Return all tied top products per category,category,total_sales DESC,RANK,Preserve all tied winners,No
+RR003,employee_performance,Create dense performance levels by department,department,performance_score DESC,DENSE_RANK,Tied scores share level without gaps,No
+RR004,customer_sales,Show top three sales ranks per country,country,total_sales DESC,RANK,May return more than three rows,Yes
+RR005,regional_daily_sales,Find lowest sales day per region,region,total_sales ASC,RANK,Preserve tied lowest days,Yes
+RR006,product_sales,Rank products per category and period,"category,sales_period",total_sales DESC,DENSE_RANK,Restart per reporting period,No
+RR007,campaign_performance,Review campaigns with null or zero ranking values,"channel,country",conversions DESC,RANK,Nulls and zeros require review,Yes
+RR008,employee_performance,Resolve tied employee scores for one winner,department,"performance_score DESC,quality_score DESC,employee_id",ROW_NUMBER,Tie-breaker must be approved,Yes
+RR009,campaign_performance,Preserve all campaigns tied by conversions,"channel,country",conversions DESC,RANK,Do not add tie-breaker if ties must remain,No
+RR010,regional_daily_sales,Create dense leaderboard of daily sales by region,region,total_sales DESC,DENSE_RANK,No skipped levels,No

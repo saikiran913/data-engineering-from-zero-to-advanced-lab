@@ -1,0 +1,14 @@
+case_id,business_question,input_grain,partition_columns,order_columns,recommended_function,frame_definition,tie_or_boundary_policy,validation_check
+CASE001,Select exactly one top customer per country,customer per activity date,country,total_spend desc and customer_id asc,ROW_NUMBER,not applicable,document deterministic tie-breaker,selected rows should equal country count
+CASE002,Show all products tied for top sales in each category,product per metric date,category,total_sales desc,RANK,not applicable,keep all rank 1 ties,count tied rank 1 rows
+CASE003,Create dense performance bands for pipelines,pipeline per load date,load_date,quality_issue_count desc,DENSE_RANK,not applicable,ties share a level without gaps,check rank levels per date
+CASE004,Compare campaign conversions with the previous metric date,campaign per metric date,campaign_id,metric_date,LAG,not applicable,first row has no previous value,count first-row boundary values
+CASE005,Show the next known status for each customer,customer per activity date,customer_id,activity_date and loaded_at,LEAD,not applicable,last row has no next value,count last-row boundary values
+CASE006,Calculate running regional sales,region per sale date,region,sale_date,SUM OVER,ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW,include current and earlier rows,reconcile final running value to source total
+CASE007,Count customer activity rows so far,customer per activity date,customer_id,activity_date,COUNT OVER,ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW,include current and earlier rows,final count equals source rows per customer
+CASE008,Calculate three-row moving campaign spend average,campaign per metric date,campaign_id,metric_date,AVG OVER,ROWS BETWEEN 2 PRECEDING AND CURRENT ROW,early rows have smaller frames,check frame row count
+CASE009,Rank categories after summing product sales,product per metric date,category,total_sales desc,RANK,not applicable,aggregate before ranking,compare source total to grouped total
+CASE010,Review missing regional sales dates,region per sale date,region,sale_date,LAG,not applicable,gaps identify review records,inspect date gaps manually
+CASE011,Review duplicate ordering values,entity per date,entity_id,metric_date and loaded_at,ROW_NUMBER,not applicable,extra tie-breaker must be documented,count repeated ordering dates
+CASE012,Review boundary nulls in LAG outputs,entity per date,entity_id,metric_date,LAG,not applicable,boundary null is expected,count one first row per partition
+CASE013,Get one total rejected-record value per pipeline,pipeline per load date,pipeline_name,not applicable,GROUP BY,not applicable,no window needed,one summary row per pipeline

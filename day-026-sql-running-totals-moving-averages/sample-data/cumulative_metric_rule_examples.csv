@@ -1,0 +1,11 @@
+scenario_id,dataset_name,business_question,partition_columns,order_columns,window_function,frame_definition,review_condition
+CM001,daily_sales_metrics,Calculate running sales by region,region,"sale_date,loaded_at",SUM,"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",Reconcile final value to grouped total
+CM002,customer_order_metrics,Count orders so far by customer,customer_id,"order_date,loaded_at,order_id",COUNT,"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",Duplicate order rows require review
+CM003,pipeline_load_metrics,Track cumulative rejected records,pipeline_name,load_date,SUM,"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",Rejected records should be reviewed
+CM004,daily_sales_metrics,Calculate three-row moving sales average,region,"sale_date,loaded_at",AVG,"ROWS BETWEEN 2 PRECEDING AND CURRENT ROW",Missing dates affect interpretation
+CM005,pipeline_load_metrics,Calculate three-row moving duration average,pipeline_name,load_date,AVG,"ROWS BETWEEN 2 PRECEDING AND CURRENT ROW",Null duration requires review
+CM006,daily_sales_metrics,Track highest sales so far by region,region,"sale_date,loaded_at",MAX,"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",Duplicate dates need tie-breaker
+CM007,pipeline_load_metrics,Track shortest load duration so far,pipeline_name,load_date,MIN,"ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW",Zero or null duration needs review
+CM008,daily_sales_metrics,Review duplicate business dates,region,sale_date,COUNT,Grouped validation,Duplicate date can alter row-based windows
+CM009,daily_sales_metrics,Review missing business dates,region,sale_date,LAG,Date-gap validation,Missing date can make three rows not equal three days
+CM010,campaign_daily_metrics,Review null spend in moving spend average,campaign_id,metric_date,AVG,"ROWS BETWEEN 2 PRECEDING AND CURRENT ROW",Null measure changes average inputs

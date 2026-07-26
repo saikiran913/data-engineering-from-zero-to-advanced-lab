@@ -1,0 +1,11 @@
+scenario_id,dataset_name,business_question,partition_columns,order_columns,comparison_function,review_condition,expected_action
+RC001,customer_order_history,Compare current and previous order amount,customer_id,"order_date,updated_at,version_number",LAG,Amount changed,Review order version history
+RC002,payment_status_history,Find the next payment status,transaction_id,status_sequence,LEAD,Next status missing,Confirm final state
+RC003,product_price_history,Detect price change,product_id,"price_date,updated_at",LAG,Price increased or decreased,Document pricing reason
+RC004,daily_sales_history,Detect missing daily sales date,region,sale_date,LAG,Date gap greater than one day,Check missing file or late load
+RC005,website_event_sequence,Detect event sequence gap,user_id,"event_sequence,event_timestamp,event_id",LAG,Sequence difference greater than one,Review event capture
+RC006,customer_order_history,Identify first row per customer,customer_id,"order_date,updated_at,version_number",LAG,Previous value is null,Label boundary row
+RC007,payment_status_history,Identify last status per transaction,transaction_id,status_sequence,LEAD,Next status is null,Confirm final status
+RC008,website_event_sequence,Review duplicate ordering value,user_id,event_sequence,LAG,Sequence difference equals zero,Investigate duplicate event
+RC009,product_price_history,Review null comparison value,product_id,"price_date,updated_at",LAG,Current or previous price is null,Exclude or review before reporting
+RC010,customer_order_history,Review late-arriving version,order_id,"updated_at,version_number",LAG,Older business date loaded later,Confirm sequence rule
