@@ -1,0 +1,11 @@
+consumer_id,consumer_type,consumer_name,required_interface,expected_grain,required_columns,freshness_need,history_need,change_sensitivity
+IC001,pipeline,Raw Event Archive Load,raw_customer_events,one row per delivered event,event_id customer_id event_timestamp received_at source_file,batch current,full history,HIGH
+IC002,analyst query,One-Time Duplicate Check,raw_customer_events,one row per event delivery,event_id received_at source_file,one-time,history helpful,LOW
+IC003,dashboard,Daily Sales Dashboard,daily_sales_reporting,one row per region-date,report_date region total_sales total_refunds,daily refreshed,stored reporting history,HIGH
+IC004,scheduled extract,Customer Directory Export,clean_customers,one row per customer,customer_id customer_name country customer_status,daily,current state,MEDIUM
+IC005,validation report,Order Quality Review,order_transactions,one row per order version,order_id customer_id order_amount updated_at,daily,history helpful,MEDIUM
+IC006,application report,Customer Profile Report,clean_customers,one row per customer,customer_id customer_name country customer_status,current,current state,HIGH
+IC007,dashboard,Customer Sales Summary,customer_sales_reporting_interface,one row per customer,customer_id customer_name completed_order_amount,daily refreshed,summary history optional,HIGH
+IC008,analyst query,Average Order Comparison,one_time_order_query,one row per order,order_id customer_id order_amount,one-time,no history,LOW
+IC009,validation report,Source Target Check,cte_validation_result,one row per check,check_name issue_count,current,no history,MEDIUM
+IC010,scheduled extract,Monthly Stored Sales Extract,monthly_sales_reporting_table,one row per region-month,month region total_sales,monthly,stored history,HIGH

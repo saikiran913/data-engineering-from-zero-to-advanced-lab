@@ -1,0 +1,17 @@
+customer_id,customer_name,country,customer_status,signup_date,email_address,updated_at
+C001,Customer 001,India,ACTIVE,2025-12-01,customer001@example.com,2026-01-05 09:00:00
+C001,Customer 001,India,ACTIVE,2025-12-01,customer001@example.com,2026-01-07 09:15:00
+C002,Customer 002,UK,ACTIVE,2025-12-03,customer002@example.com,2026-01-05 09:10:00
+C003,Customer 003,USA,INACTIVE,2025-12-04,customer003@example.com,2026-01-05 09:20:00
+C004,Customer 004,India,ACTIVE,2025-12-06,,2026-01-05 09:25:00
+C005,Customer 005,,ACTIVE,2025-12-08,customer005@example.com,2026-01-05 09:30:00
+C006,Customer 006,UK,ACTIVE,2025-12-09,customer006@example.com,2026-01-05 09:35:00
+C007,Customer 007,USA,ACTIVE,2025-12-11,customer007@example.com,2026-01-05 09:40:00
+C008,Customer 008,India,INACTIVE,2025-12-12,customer008@example.com,2026-01-05 09:45:00
+C008,Customer 008,India,ACTIVE,2025-12-12,customer008@example.com,2026-01-08 09:45:00
+C009,Customer 009,UK,ACTIVE,2025-12-13,customer009@example.com,2026-01-05 09:50:00
+C010,Customer 010,USA,ACTIVE,2025-12-15,customer010@example.com,2026-01-05 09:55:00
+C011,Customer 011,India,ACTIVE,2025-12-17,customer011@example.com,2026-01-05 10:00:00
+C012,Customer 012,UK,INACTIVE,2025-12-19,customer012@example.com,2026-01-05 10:05:00
+C013,Customer 013,USA,ACTIVE,2025-12-21,customer013@example.com,2026-01-05 10:10:00
+C014,Customer 014,India,ACTIVE,2025-12-22,customer014@example.com,2026-01-05 10:15:00

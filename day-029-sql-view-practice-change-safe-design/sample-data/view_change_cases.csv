@@ -1,0 +1,13 @@
+case_id,view_name,change_type,current_definition_summary,proposed_change_summary,expected_benefit,main_risk,required_validation,breaking_change_possible
+CASE001,vw_active_customers,add column,exposes customer_id customer_name country status,add signup_date,more reporting context,SELECT star consumers may see schema change,column contract review,Yes
+CASE002,vw_customer_sales_summary,rename column,completed_order_amount,rename to revenue_amount,clearer business wording,existing reports may fail,consumer required-column check,Yes
+CASE003,vw_customer_directory,remove column,includes email_address,remove email_address,reduce exposed fields,extracts expecting email may fail,consumer inventory review,Yes
+CASE004,vw_active_customers,filter change,ACTIVE customers only,include ACTIVE and REVIEW customers,more complete customer list,active counts change,row count and status distribution,Yes
+CASE005,vw_order_details,join change,orders joined to customers,add payments join,show payment status,row multiplication,duplicate order key check,Yes
+CASE006,vw_customer_sales_summary,aggregation change,total completed amount,average completed amount,new average metric,metric meaning changes,total and average comparison,Yes
+CASE007,vw_campaign_daily_reporting,grain change,campaign-date-channel-country,campaign-month-channel-country,monthly reporting,grain changes and dates roll up,row count total date-boundary review,Yes
+CASE008,vw_active_customers,null-handling change,preserve null country,replace null with UNKNOWN,clear grouping label,distribution changes,null count and country distribution,Yes
+CASE009,vw_valid_orders,type change,numeric order_amount,text formatted order_amount,display-ready output,calculations may fail,type contract review,Yes
+CASE010,vw_campaign_latest_load,dependency change,uses campaign_metrics_source,builds on another view,reuse clean logic,dependency chain risk,dependency review,Yes
+CASE011,vw_valid_orders,audit-column addition,no updated_at exposed,add updated_at,better investigation,new column affects fixed schemas,column contract and consumer review,Yes
+CASE012,vw_order_reporting,status-rule change,REFUND_REQUESTED is review status,treat as refunded-like,align reporting status,refund totals change,status distribution and total reconciliation,Yes

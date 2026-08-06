@@ -1,0 +1,11 @@
+rule_id,stage_name,rule_name,rule_type,rule_description,review_condition,expected_action,severity
+RULE001,staged_orders,null_business_key,key_check,Customer ID or order ID should be present,customer_id is null or order_id is null,send to review queue,HIGH_REVIEW
+RULE002,staged_orders,duplicate_order_key,duplicate_check,Only one selected order candidate should continue,order_id appears more than once,review duplicate candidates,HIGH_REVIEW
+RULE003,staged_orders,invalid_amount,value_check,Order amount should be positive,order_amount less than or equal to zero,send to review queue,HIGH_REVIEW
+RULE004,staged_orders,missing_timestamp,timestamp_check,Event timestamp should be present,event_timestamp is null,send to review queue,REVIEW
+RULE005,staged_orders,unsupported_status,status_check,Latest event type should map to supported clean status,latest_event_type is unsupported,send to review queue,REVIEW
+RULE006,staged_orders,late_arriving_record,timing_check,Received time before event time needs review,received_at earlier than event_timestamp,review timing lineage,INFO
+RULE007,source_to_stage,count_mismatch,count_check,Source candidate count should reconcile to stage outputs,accepted plus review differs from candidate count,investigate stage filters,HIGH_REVIEW
+RULE008,stage_to_clean,total_mismatch,total_check,Accepted stage total should reconcile to clean total,amount totals differ,investigate clean handoff,HIGH_REVIEW
+RULE009,reporting_output,reporting_grain_duplication,grain_check,Reporting should be one row per date and group,report date plus group appears more than once,review reporting grain,HIGH_REVIEW
+RULE010,all_stages,audit_column_missing,audit_check,Audit columns should remain available,source_file or received_at missing,restore audit fields,REVIEW

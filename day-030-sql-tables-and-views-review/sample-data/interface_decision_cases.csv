@@ -1,0 +1,13 @@
+case_id,business_question,source_grain,required_output_grain,persistence_need,reuse_need,history_need,freshness_need,recommended_interface,main_risk,validation_check
+CASE001,Store all raw customer events,one row per event delivery,one row per event delivery,Yes,Yes,Yes,batch current,raw table,losing replay history,row count and duplicate event review
+CASE002,Expose latest customer profile,one row per customer,one row per customer,No,Yes,No,current source logic,current-state view,stale or duplicate customer rows,key uniqueness
+CASE003,Create clean reusable customer data,one row per customer,one row per customer,Yes,Yes,Some,daily,clean table,undocumented business rules,key and null validation
+CASE004,Reuse valid-order logic across reports,one row per order version,one row per valid order,No,Yes,No,current source logic,view,hidden filter changes,row count and excluded-row review
+CASE005,Calculate orders above average once,one row per order,one row per qualifying order,No,No,No,one-time,subquery,overbuilding interface,sample check
+CASE006,Build multi-step customer sales calculation,one row per order,one row per customer,No,No,No,one query,CTE,logic not reusable outside statement,total reconciliation
+CASE007,Serve daily regional dashboard,one row per region-date,one row per region-date,Maybe,Yes,Some,daily,reporting view or table,consumer grain mismatch,row count and date range
+CASE008,Preserve monthly reporting history,one row per region-date,one row per region-month,Yes,Yes,Yes,monthly,reporting table,refresh and history confusion,total reconciliation
+CASE009,Expose payment exceptions,one row per order version,one row per issue,No,Yes,No,current source logic,exception view,hiding invalid records,issue count
+CASE010,Perform source-target validation,one row per source row,one row per check,No,No,No,one-time,CTE validation query,no reusable need,row count comparison
+CASE011,Support current order interface,one row per order version,one row per order,No,Yes,No,current source logic,current-state view,tie-breaker risk,duplicate key check
+CASE012,Avoid new interface for a simple lookup,one row per customer,one row per filtered customer,No,No,No,one-time,simple query,unnecessary object creation,row count check

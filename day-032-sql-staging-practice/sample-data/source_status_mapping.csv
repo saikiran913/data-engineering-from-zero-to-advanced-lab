@@ -1,0 +1,11 @@
+source_status,standard_status,is_supported,reporting_category,review_required
+complete,COMPLETED,Yes,Completed,No
+completed,COMPLETED,Yes,Completed,No
+paid,COMPLETED,Yes,Completed,No
+pending,PENDING,Yes,Pending,No
+cancelled,CANCELLED,Yes,Cancelled,No
+canceled,CANCELLED,Yes,Cancelled,No
+refund,REFUNDED,Yes,Refund,No
+refunded,REFUNDED,Yes,Refund,No
+failed,FAILED,Yes,Failed,Yes
+unknown,UNKNOWN,No,Unsupported,Yes

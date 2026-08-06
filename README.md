@@ -65,7 +65,12 @@ Over time, this repository will cover:
 | Day 025 | [SQL Window Functions Practice: LAG, LEAD, and Row-to-Row Comparisons](day-025-sql-lag-lead-row-comparisons/) | Available |
 | Day 026 | [SQL Window Function Practice: Running Totals, Cumulative Metrics, and Moving Averages](day-026-sql-running-totals-moving-averages/) | Available |
 | Day 027 | [SQL Window Function Review: Ranking, Row Comparisons, and Cumulative Analysis Practice](day-027-sql-window-function-review/) | Available |
-| Day 028 | SQL Views for Data Engineers: Reusable Queries, Clean Interfaces, and Safe Reporting Layers | Coming Soon |
+| Day 028 | [SQL Views for Data Engineers: Reusable Queries, Clean Interfaces, and Safe Reporting Layers](day-028-sql-views-for-data-engineers/) | Available |
+| Day 029 | [SQL View Practice for Data Engineers: Dependency Checks, Reporting Validation, and Change-Safe Design](day-029-sql-view-practice-change-safe-design/) | Available |
+| Day 030 | [SQL Tables and Views Review: Choosing the Right Data Interface for Data Engineering Workflows](day-030-sql-tables-and-views-review/) | Available |
+| Day 031 | [SQL Temporary Results and Staging Concepts: Intermediate Data, Validation Steps, and Safe Pipeline Thinking](day-031-sql-temporary-results-and-staging/) | Available |
+| Day 032 | [SQL Staging Practice for Data Engineers: Multi-Step Transformations, Validation Checkpoints, and Safe Handoffs](day-032-sql-staging-practice/) | Available |
+| Day 033 | SQL Pipeline Validation Review: Row Counts, Control Totals, Data Completeness, and Exception Reporting | Coming Soon |
 
 ## Repository Philosophy
 
@@ -81,7 +86,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, and Day 027 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, and Day 032 are available.
 
 ## How to Use This Repository
 

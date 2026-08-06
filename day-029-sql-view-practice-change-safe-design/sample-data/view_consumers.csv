@@ -1,0 +1,13 @@
+consumer_id,consumer_type,consumer_name,view_name,required_columns,expected_grain,critical_metrics,change_sensitivity,owner_role
+CONS001,dashboard,Sales Overview Dashboard,vw_customer_sales_summary,customer_id completed_order_count completed_order_amount,one row per customer,completed_order_amount,HIGH,Analytics Owner
+CONS002,scheduled extract,Monthly Finance Extract,vw_customer_sales_summary,customer_id completed_order_amount,one row per customer,completed_order_amount,HIGH,Finance Reporting Owner
+CONS003,analyst query,Customer Retention Query,vw_active_customers,customer_id country customer_status,one row per customer version,active_customer_count,MEDIUM,Analytics Owner
+CONS004,downstream view,Customer Country Summary View,vw_active_customers,country customer_id,one row per customer version,customer_count,MEDIUM,Data Engineering Owner
+CONS005,application report,Order Detail Report,vw_order_details,order_id customer_id order_amount,one row per order,order_amount,HIGH,Operations Reporting Owner
+CONS006,data-quality report,Order Exception Report,vw_order_exception_review,order_id issue_type,one row per issue,issue_count,MEDIUM,Data Quality Owner
+CONS007,dashboard,Campaign Performance Dashboard,vw_campaign_daily_reporting,campaign_id metric_date channel country conversions spend,one row per campaign-date-channel-country,spend,HIGH,Marketing Analytics Owner
+CONS008,analyst query,Payment Attempt Query,vw_order_payment_attempts,order_id payment_id payment_status payment_amount,one row per payment attempt,payment_amount,MEDIUM,Finance Reporting Owner
+CONS009,scheduled extract,Customer Directory Export,vw_customer_directory,customer_id customer_name country,one row per customer,email_field_presence,HIGH,Data Sharing Owner
+CONS010,downstream view,Revenue Trend View,vw_valid_orders,order_id order_date order_amount,one row per order,order_amount,HIGH,Data Engineering Owner
+CONS011,application report,Refund Review Report,vw_valid_orders,order_id order_status order_amount,one row per order,refund_amount,MEDIUM,Operations Reporting Owner
+CONS012,data-quality report,Campaign Load Review,vw_campaign_latest_load,access_key loaded_at spend,one row per campaign-date-channel-country,duplicate_delivery_count,MEDIUM,Data Quality Owner

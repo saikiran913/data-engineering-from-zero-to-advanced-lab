@@ -1,0 +1,11 @@
+case_id,business_question,input_layer,input_grain,output_layer,output_grain,intermediate_method,main_validation,main_risk,recommended_action
+CASE001,Prepare latest order candidate from raw events,raw,one row per received order event,stage,one row per selected order candidate,CTE-only stage,duplicate order count,wrong latest event selected,validate ranking and audit fields
+CASE002,Reuse staged orders across several checks,raw,one row per received order event,stage,one row per staged order candidate,persistent-stage concept,source-to-stage count reconciliation,undocumented copied raw data,define purpose grain and lifecycle
+CASE003,Separate accepted and review order rows,stage,one row per staged order candidate,review queue,one row per review issue,accepted/review split,accepted plus review reconciliation,suspicious rows hidden,preserve review rows with reason
+CASE004,Deduplicate before clean output,stage,one row per order candidate,clean,one row per order,deduplication stage,duplicate key check,duplicate amount in reporting,rank before handoff
+CASE005,Create clean current-state orders,stage,one row per order candidate,clean,one row per clean order,clean output,key uniqueness,clean data assumed reporting-ready,validate before reporting
+CASE006,Build daily reporting totals,clean,one row per clean order,reporting,one row per report date and group,reporting aggregation,total reconciliation,grain mismatch,validate totals and reporting keys
+CASE007,Investigate source count mismatch,raw,one row per event,stage,one row per selected candidate,mismatch review,row count comparison,stage filters too aggressive,compare aligned grain counts
+CASE008,Preserve source audit columns,raw,one row per event,stage,one row per candidate,audit preservation,audit-column check,lineage lost,keep source_file and received_at
+CASE009,Simple one-time count check,clean,one row per clean order,validation,one row per check,no-extra-stage-needed,row count,unnecessary staging,use simple query
+CASE010,Split every small expression into a stage,stage,mixed,stage,mixed,too-many-stages,readability review,workflow becomes confusing,combine trivial stages

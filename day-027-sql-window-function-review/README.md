@@ -80,5 +80,5 @@ Date arithmetic, default window frames, and type handling can vary across SQL pl
 ## Navigation
 
 - Previous Day: [Day 026 - SQL Window Function Practice: Running Totals, Cumulative Metrics, and Moving Averages](../day-026-sql-running-totals-moving-averages/)
-- Next Day: Day 028 - SQL Views for Data Engineers: Reusable Queries, Clean Interfaces, and Safe Reporting Layers - Coming Soon
+- Next Day: [Day 028 - SQL Views for Data Engineers](../day-028-sql-views-for-data-engineers/)
 - [Back to Main Learning Path](../README.md)
