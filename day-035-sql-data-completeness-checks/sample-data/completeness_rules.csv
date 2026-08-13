@@ -1,0 +1,13 @@
+rule_id,stage_name,completeness_type,field_or_population,expected_condition,severity,exception_output,review_message
+RULE001,SOURCE,required_field,order_id,order_id must be present,HIGH,exception,Missing order IDs block key-based checks.
+RULE002,SOURCE,required_field,customer_id,customer_id required for source order grain,HIGH,exception,Missing customer IDs need review.
+RULE003,SOURCE,required_field,order_date,order_date required for date coverage,HIGH,exception,Missing dates can break reporting.
+RULE004,SOURCE,required_field,country_group,country_group required for regional reporting,MEDIUM,exception,Blank or null country groups need review.
+RULE005,SOURCE,file_completeness,source_file,expected source files should arrive,HIGH,exception,Missing files can explain missing records.
+RULE006,STAGE,key_completeness,order_id,source orders should appear in stage unless documented,HIGH,exception,Source-only orders need review.
+RULE007,CLEAN,record_completeness,accepted_orders,accepted stage orders should reach clean,HIGH,exception,Accepted orders missing from clean need review.
+RULE008,REPORTING,date_coverage,report_date,expected report dates should be present,HIGH,exception,Missing report dates can create incomplete dashboards.
+RULE009,REPORTING,category_coverage,country_group,expected country groups should be present by date,MEDIUM,exception,Missing groups need explanation.
+RULE010,SOURCE,status_coverage,order_status,expected statuses should be represented or documented,MEDIUM,summary,Missing status categories may be valid but should be reviewed.
+RULE011,REPORTING,null_completeness,reporting_metrics,reporting metric columns should not be null,HIGH,exception,Null metrics need investigation.
+RULE012,CLEAN,target_only_key,order_id,clean orders should have expected source or stage lineage,HIGH,exception,Unexpected clean-only orders need review.

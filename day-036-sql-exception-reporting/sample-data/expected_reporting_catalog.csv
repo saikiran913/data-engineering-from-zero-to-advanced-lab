@@ -1,0 +1,13 @@
+expectation_id,report_date,country_group,expected_presence,expected_completed_activity,expected_refund_activity,review_note
+EXP001,2026-05-01,India,Yes,Yes,No,Expected active group
+EXP002,2026-05-01,Europe,Yes,No,No,Expected pending group
+EXP003,2026-05-01,North America,Yes,Yes,No,Expected active group
+EXP004,2026-05-03,Asia Pacific,Yes,Yes,No,Expected completed group
+EXP005,2026-05-05,Europe,Yes,No,Yes,Expected refund group
+EXP006,2026-05-06,India,Yes,Yes,No,Expected active group
+EXP007,2026-05-06,Europe,Yes,No,No,Expected pending group
+EXP008,2026-05-07,Europe,Yes,Yes,No,Expected active group
+EXP009,2026-05-07,North America,Yes,Yes,No,Expected active group
+EXP010,2026-05-08,India,Yes,No,No,Expected group missing from reporting
+EXP011,2026-05-08,Other,No,No,No,Unexpected group used for clean-only order
+EXP012,2026-05-09,India,Yes,No,No,Expected missing date

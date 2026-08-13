@@ -1,0 +1,16 @@
+rule_id,stage_name,check_type,check_name,expected_condition,severity,exception_output,validation_message
+RULE001,SOURCE,row_count,source_rows_received,row_count greater than zero,HIGH,summary,Source extract should contain rows.
+RULE002,STAGE,row_count,stage_rows_reconcile,accepted plus review equals staged,HIGH,summary,Staged population should be explained.
+RULE003,CLEAN,distinct_key_count,clean_order_distinct_count,row count equals distinct order count,HIGH,exception,One clean row should represent one order.
+RULE004,CLEAN,duplicate_key,duplicate_clean_order_id,no duplicate order IDs,HIGH,exception,Duplicate clean keys can double count reports.
+RULE005,SOURCE,null_key,null_source_order_id,no null order IDs,HIGH,exception,Source business keys should be present.
+RULE006,CLEAN,amount_total,clean_completed_total_matches_reporting,completed amount totals reconcile,HIGH,summary,Completed totals should match reporting after documented rules.
+RULE007,STAGE,accepted_review_reconciliation,accepted_review_equals_stage,no unexplained difference,HIGH,summary,Accepted and review populations should reconcile.
+RULE008,SOURCE,source_file_completeness,expected_files_received,all expected files present,MEDIUM,exception,Missing source files can explain missing records.
+RULE009,SOURCE,date_completeness,expected_dates_present,expected dates represented,MEDIUM,exception,Missing dates may create reporting gaps.
+RULE010,SOURCE,category_completeness,expected_statuses_present,expected statuses represented,MEDIUM,exception,Missing categories may hide source changes.
+RULE011,CLEAN,source_only_key,source_keys_represented,source accepted keys appear in clean,HIGH,exception,Accepted source rows missing from clean need review.
+RULE012,CLEAN,target_only_key,target_keys_have_source,target keys appear in source,HIGH,exception,Target-only rows need investigation.
+RULE013,REPORTING,reporting_grain,unique_reporting_key,one row per date and country group,HIGH,exception,Duplicate reporting grain can double count metrics.
+RULE014,REPORTING,null_reporting_metric,no null reporting metrics,MEDIUM,exception,Null report metrics should be explained.
+RULE015,REPORTING,grouped_total,grouped_totals_reconcile,grouped totals match clean metrics,HIGH,exception,Grouped totals reveal hidden mismatches.

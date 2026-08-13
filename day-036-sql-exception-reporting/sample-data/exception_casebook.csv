@@ -1,0 +1,15 @@
+case_id,business_question,exception_level,stage_name,issue_category,entity_key_type,expected_value_type,actual_value_type,severity,investigation_context
+CASE001,Is customer ID missing,RECORD,SOURCE,REQUIRED_FIELD,order_id,text,text,HIGH_REVIEW,Inspect source file and customer assignment
+CASE002,Is order amount missing,RECORD,SOURCE,REQUIRED_FIELD,order_id,text,text,HIGH_REVIEW,Review source extract completeness
+CASE003,Is amount negative,RECORD,SOURCE,VALUE_MISMATCH,order_id,numeric,numeric,REVIEW,Confirm refund or correction rule
+CASE004,Is status unsupported,RECORD,SOURCE,STATUS_MISMATCH,order_id,text,text,REVIEW,Review status mapping
+CASE005,Is clean key duplicated,RECORD,CLEAN,DUPLICATE_KEY,order_id,numeric,numeric,HIGH_REVIEW,Review clean grain
+CASE006,Is source order missing from clean,RECORD,STAGE_TO_CLEAN,MISSING_RECORD,order_id,text,text,REVIEW,Check expected exclusions
+CASE007,Is clean order unexpected,RECORD,CLEAN,UNEXPECTED_RECORD,order_id,text,text,HIGH_REVIEW,Trace lineage
+CASE008,Does completed total mismatch,METRIC,REPORTING,CONTROL_TOTAL,metric_name,numeric,numeric,HIGH_REVIEW,Compare clean and reporting totals
+CASE009,Is reporting grain duplicated,METRIC,REPORTING,REPORTING_GRAIN,date_country_group,numeric,numeric,HIGH_REVIEW,Review reporting aggregation
+CASE010,Is report group missing,STAGE,REPORTING,DATE_COVERAGE,date_country_group,text,text,REVIEW,Review expected reporting catalogue
+CASE011,Unexpected file is informational,STAGE,SOURCE_FILE,SOURCE_FILE,source_file,text,text,INFO,Confirm source delivery note
+CASE012,One record has multiple issues,RECORD,SOURCE,REQUIRED_FIELD,order_id,text,text,HIGH_REVIEW,Keep one row per issue
+CASE013,Duplicate exception row appears,RECORD,REVIEW_QUEUE,DUPLICATE_KEY,exception_key,numeric,numeric,REVIEW,Investigate rule overlap
+CASE014,No exception when values match,INFO,CLEAN,CONTROL_TOTAL,order_id,text,text,INFO,No review needed

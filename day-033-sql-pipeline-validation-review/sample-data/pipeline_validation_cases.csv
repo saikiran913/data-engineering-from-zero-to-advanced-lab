@@ -1,0 +1,16 @@
+case_id,business_question,source_stage,target_stage,source_grain,target_grain,validation_type,expected_difference,main_risk,recommended_check
+CASE001,Did source rows load to stage,SOURCE,STAGE,one source record,one staged candidate,row count,deduplication and review logic may change count,lost source rows,row-count validation
+CASE002,Did duplicate source orders reduce safely,SOURCE,STAGE,one source record,one candidate per order,distinct-key count,duplicate source keys may reduce rows,wrong deduplication,duplicate key check
+CASE003,Did accepted and review reconcile,STAGE,STAGE,one staged candidate,accepted plus review candidates,row count,no unexplained difference,hidden filters,accepted-review reconciliation
+CASE004,Did clean output exclude only review rows,STAGE,CLEAN,one staged candidate,one clean order,source-target keys,review rows excluded by rule,accepted row missing,source-only key check
+CASE005,Did clean totals match reporting,CLEAN,REPORTING,one clean order,one date and group,total reconciliation,aggregation changes grain,incorrect reporting amount,control total validation
+CASE006,Did grouped totals match,CLEAN,REPORTING,one clean order,one date and group,grouped reconciliation,aggregation by date and group,global total hides issue,grouped total validation
+CASE007,Are clean order IDs unique,CLEAN,CLEAN,one clean order,one clean order,duplicate key,no duplicate expected,double counting,duplicate clean key check
+CASE008,Are reporting keys unique,REPORTING,REPORTING,one report row,one date and group,reporting grain,no duplicate expected,duplicated dashboard rows,composite key check
+CASE009,Are expected files present,SOURCE,SOURCE,one source record,one source file,file completeness,all expected files should appear,missing date file,source-file check
+CASE010,Are expected dates present,SOURCE,SOURCE,one source record,one order date,date completeness,business calendar expected dates,missing reporting day,date coverage check
+CASE011,Is there a target-only clean row,SOURCE,CLEAN,one source record,one clean order,target-only key,none expected,manual adjustment without source,target-only key check
+CASE012,Are null report metrics present,REPORTING,REPORTING,one report row,one report row,null completeness,no null metrics expected,blank dashboard value,null metric check
+CASE013,Is grand total enough,CLEAN,REPORTING,one clean order,one date and group,grouped reconciliation,global total may match while groups differ,hidden group issue,grouped reconciliation
+CASE014,Can a difference be expected,STAGE,CLEAN,one staged candidate,one clean order,expected difference,review rows excluded,wrongly failing valid rule,documented exclusion check
+CASE015,Is an unexplained difference present,SOURCE,CLEAN,one source record,one clean order,key comparison,no unexplained target-only keys,untrusted clean output,exception report

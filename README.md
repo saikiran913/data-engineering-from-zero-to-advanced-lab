@@ -70,7 +70,12 @@ Over time, this repository will cover:
 | Day 030 | [SQL Tables and Views Review: Choosing the Right Data Interface for Data Engineering Workflows](day-030-sql-tables-and-views-review/) | Available |
 | Day 031 | [SQL Temporary Results and Staging Concepts: Intermediate Data, Validation Steps, and Safe Pipeline Thinking](day-031-sql-temporary-results-and-staging/) | Available |
 | Day 032 | [SQL Staging Practice for Data Engineers: Multi-Step Transformations, Validation Checkpoints, and Safe Handoffs](day-032-sql-staging-practice/) | Available |
-| Day 033 | SQL Pipeline Validation Review: Row Counts, Control Totals, Data Completeness, and Exception Reporting | Coming Soon |
+| Day 033 | [SQL Pipeline Validation Review: Row Counts, Control Totals, Data Completeness, and Exception Reporting](day-033-sql-pipeline-validation-review/) | Available |
+| Day 034 | [SQL Control Totals for Data Engineers: Counts, Sums, Boundaries, and Stage Reconciliation](day-034-sql-control-totals/) | Available |
+| Day 035 | [SQL Data Completeness Checks: Required Fields, Missing Keys, Date Coverage, and Expected Records](day-035-sql-data-completeness-checks/) | Available |
+| Day 036 | [SQL Exception Reporting: Review Queues, Severity Levels, and Investigable Data-Quality Outputs](day-036-sql-exception-reporting/) | Available |
+| Day 037 | [SQL Schema Validation: Column Contracts, Data Types, Required Fields, and Change Detection](day-037-sql-schema-validation/) | Available |
+| Day 038 | SQL Schema Validation Practice: Schema Drift, Breaking Changes, Consumer Impact, and Safe Compatibility Review | Coming Soon |
 
 ## Repository Philosophy
 
@@ -86,7 +91,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, and Day 032 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, and Day 037 are available.
 
 ## How to Use This Repository
 

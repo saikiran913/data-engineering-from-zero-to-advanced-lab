@@ -1,0 +1,13 @@
+rule_id,validation_type,rule_name,expected_condition,severity,issue_category,exception_output,review_message
+SVR001,missing_required,Required column must exist,Required expected columns appear in observed schema,HIGH_REVIEW,MISSING_COLUMN,Schema exception,Required column is missing from observed schema.
+SVR002,missing_optional,Optional column should be reviewed if absent,Optional expected columns may be absent but should be documented,REVIEW,MISSING_COLUMN,Schema exception,Optional column is absent and consumer impact should be reviewed.
+SVR003,unexpected,Unexpected column review,Observed columns not in expected schema should be reviewed,REVIEW,UNEXPECTED_COLUMN,Schema exception,Observed column is not part of the expected contract.
+SVR004,type_mismatch,Data type must match expected contract,Observed type should match expected type,HIGH_REVIEW,TYPE_MISMATCH,Schema exception,Observed data type differs from expected data type.
+SVR005,nullability_mismatch,Nullability contract must match,Observed nullable flag should match expected nullable flag,REVIEW,NULLABILITY_MISMATCH,Schema exception,Observed nullability differs from expected contract.
+SVR006,key_missing,Key column must exist,Expected key columns should be present,HIGH_REVIEW,KEY_RISK,Schema exception,Expected key column is missing.
+SVR007,possible_rename,Possible rename requires review,Missing and unexpected similar columns should be reviewed,HIGH_REVIEW,POSSIBLE_RENAME,Schema exception,Possible rename detected; human review is required.
+SVR008,additive_audit,Additive audit column review,New audit-like columns may be informational,INFO,ADDITIVE_CHANGE,Schema exception,Unexpected audit-like column may be intentional but should be documented.
+SVR009,select_star_risk,SELECT star consumer risk,Consumers using SELECT star should review any schema change,REVIEW,CONSUMER_IMPACT,Consumer review,Consumer may be affected by added or reordered columns.
+SVR010,semantic_review,Semantic meaning review,Same name and type do not prove same meaning,REVIEW,SEMANTIC_REVIEW,Schema exception,Column meaning may have changed and requires business review.
+SVR011,removed_column,Removed expected column review,Expected columns missing from new version should be reviewed,HIGH_REVIEW,REMOVED_COLUMN,Schema exception,Expected column appears removed from the observed version.
+SVR012,position_change,Column order caution,Position changes should be reviewed for fixed exports,REVIEW,POSITION_CHANGE,Schema exception,Column position changed; review position-sensitive consumers.

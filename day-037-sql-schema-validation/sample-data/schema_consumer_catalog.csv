@@ -1,0 +1,11 @@
+consumer_id,consumer_type,consumer_name,required_columns,expected_types,expected_grain,select_star_usage,change_sensitivity,owner_role
+C001,Dashboard,Global Orders Dashboard,"order_id,order_date,order_amount,country_group","TEXT,DATE,DECIMAL,TEXT",One row per order,No,High,Reporting team
+C002,Reporting Query,Daily Revenue Report,"order_date,order_amount,order_status","DATE,DECIMAL,TEXT",One row per order,No,High,Analytics engineering
+C003,Analyst Extract,Monthly Order Extract,"order_id,customer_id,order_status,order_amount","TEXT,TEXT,TEXT,DECIMAL",One row per order,Yes,High,Analytics users
+C004,Downstream View,Clean Orders View,"order_id,customer_id,source_file,loaded_at","TEXT,TEXT,TEXT,TIMESTAMP",One row per order,No,High,Data engineering
+C005,Application Report,Customer Order Lookup,"order_id,customer_id,order_date","TEXT,TEXT,DATE",One row per order,No,High,Operations reporting
+C006,Validation Report,Completeness Check Report,"order_id,customer_id,order_amount","TEXT,TEXT,DECIMAL",One row per order,No,Medium,Data quality
+C007,Analyst Query,Ad Hoc Order Pull,"order_id,order_status,country_group","TEXT,TEXT,TEXT",One row per order,Yes,Medium,Analyst group
+C008,Extract,Fixed Column Export,"order_id,customer_id,order_status,order_date,order_amount,country_group,source_file,loaded_at","TEXT,TEXT,TEXT,DATE,DECIMAL,TEXT,TEXT,TIMESTAMP",One row per order,No,High,External reporting
+C009,Downstream View,Order Audit View,"order_id,source_file,loaded_at","TEXT,TEXT,TIMESTAMP",One row per order,No,Medium,Audit reporting
+C010,Dashboard,Status Trend Dashboard,"order_date,order_status,country_group","DATE,TEXT,TEXT",One row per order,No,Medium,Reporting team

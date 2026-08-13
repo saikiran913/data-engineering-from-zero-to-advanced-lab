@@ -130,5 +130,5 @@ Date functions, timestamp comparisons, and text normalisation can vary slightly 
 ## Navigation
 
 - Previous Day: [Day 031 - SQL Temporary Results and Staging Concepts](../day-031-sql-temporary-results-and-staging/)
-- Next Day: Day 033 - SQL Pipeline Validation Review: Row Counts, Control Totals, Data Completeness, and Exception Reporting - Coming Soon
+- Next Day: [Day 033 - SQL Pipeline Validation Review](../day-033-sql-pipeline-validation-review/)
 - [Back to Main Learning Path](../README.md)

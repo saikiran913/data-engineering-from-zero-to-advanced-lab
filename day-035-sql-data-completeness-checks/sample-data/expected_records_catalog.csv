@@ -1,0 +1,22 @@
+expectation_id,expectation_type,expected_value,stage_name,expected_date,country_group,status_category,source_file,required_flag,review_note
+EXP001,ORDER_ID,ORD4001,CLEAN,,,,,Yes,Expected accepted order
+EXP002,ORDER_ID,ORD4002,CLEAN,,,,,Yes,Expected accepted order
+EXP003,ORDER_ID,ORD4003,CLEAN,,,,,Yes,Expected accepted order
+EXP004,ORDER_ID,ORD4014,CLEAN,,,,,Yes,Accepted order with missing source file still needs review
+EXP005,ORDER_ID,ORD4021,CLEAN,,,,,Yes,Expected order missing from clean
+EXP006,REPORT_DATE,,REPORTING,2026-04-01,,,,Yes,Expected report date
+EXP007,REPORT_DATE,,REPORTING,2026-04-02,,,,Yes,Expected report date
+EXP008,REPORT_DATE,,REPORTING,2026-04-03,,,,Yes,Expected report date missing
+EXP009,REPORT_DATE,,REPORTING,2026-04-08,,,,Yes,Expected report date
+EXP010,DATE_COUNTRY_GROUP,,REPORTING,2026-04-05,India,,,Yes,Expected date-country group
+EXP011,DATE_COUNTRY_GROUP,,REPORTING,2026-04-07,India,,,Yes,Expected missing date-country group
+EXP012,DATE_COUNTRY_GROUP,,REPORTING,2026-04-08,Asia Pacific,,,Yes,Expected duplicate grain case
+EXP013,STATUS_CATEGORY,,SOURCE,,,COMPLETED,,Yes,Expected source status
+EXP014,STATUS_CATEGORY,,SOURCE,,,PENDING,,Yes,Expected source status
+EXP015,STATUS_CATEGORY,,SOURCE,,,REFUNDED,,Yes,Expected source status
+EXP016,STATUS_CATEGORY,,SOURCE,,,CANCELLED,,Yes,Expected source status
+EXP017,SOURCE_FILE,,SOURCE,,,,orders_2026_04_01.csv,Yes,Expected source file
+EXP018,SOURCE_FILE,,SOURCE,,,,orders_2026_04_02.csv,Yes,Expected source file
+EXP019,SOURCE_FILE,,SOURCE,,,,orders_2026_04_09.csv,Yes,Expected missing source file
+EXP020,REQUIRED_FIELD,customer_id,SOURCE,,,,,Yes,Customer ID required in source
+EXP021,REQUIRED_FIELD,country_group,CLEAN,,,,,Yes,Country group required in clean

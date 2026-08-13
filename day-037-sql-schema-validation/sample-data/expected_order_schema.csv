@@ -1,0 +1,9 @@
+column_name,expected_data_type,required_flag,nullable_flag,business_meaning,key_role,consumer_sensitivity,expected_position
+order_id,TEXT,Yes,No,Unique order identifier,Business key,High,1
+customer_id,TEXT,Yes,No,Customer identifier,None,High,2
+order_status,TEXT,Yes,No,Current order lifecycle status,None,High,3
+order_date,DATE,Yes,No,Business date when the order was placed,Date key,High,4
+order_amount,DECIMAL,Yes,No,Order amount before reporting aggregation,None,High,5
+country_group,TEXT,Yes,No,Reporting country or region group,Reporting group,Medium,6
+source_file,TEXT,Yes,No,File or feed where the row arrived,Audit field,Medium,7
+loaded_at,TIMESTAMP,Yes,No,Timestamp when the row was loaded,Audit field,Medium,8

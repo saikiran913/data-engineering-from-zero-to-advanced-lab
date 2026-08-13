@@ -1,0 +1,10 @@
+column_name,observed_data_type,nullable_flag,observed_position,source_version,observed_at
+order_id,TEXT,No,1,V1,2026-06-01T08:00:00
+customer_id,TEXT,No,2,V1,2026-06-01T08:00:00
+order_status,TEXT,No,3,V1,2026-06-01T08:00:00
+order_date,DATE,No,4,V1,2026-06-01T08:00:00
+order_amount,DECIMAL,No,5,V1,2026-06-01T08:00:00
+country_group,TEXT,No,6,V1,2026-06-01T08:00:00
+source_file,TEXT,No,7,V1,2026-06-01T08:00:00
+loaded_at,TIMESTAMP,No,8,V1,2026-06-01T08:00:00
+source_batch_id,TEXT,Yes,9,V1,2026-06-01T08:00:00

@@ -1,0 +1,15 @@
+rule_id,stage_name,issue_category,issue_type,severity,rule_description,expected_condition,review_message
+RULE001,SOURCE,REQUIRED_FIELD,NULL_CUSTOMER_ID,HIGH_REVIEW,Customer ID is required,customer_id is not null,Customer ID is missing in source data.
+RULE002,SOURCE,REQUIRED_FIELD,NULL_ORDER_AMOUNT,HIGH_REVIEW,Order amount is required,order_amount is not null,Order amount is missing in source data.
+RULE003,SOURCE,VALUE_MISMATCH,NEGATIVE_ORDER_AMOUNT,REVIEW,Negative amounts require context,amount is non-negative or documented,Negative amount requires review.
+RULE004,SOURCE,STATUS_MISMATCH,UNSUPPORTED_STATUS,REVIEW,Unsupported statuses need mapping,status is supported,Unsupported source status requires review.
+RULE005,CLEAN,DUPLICATE_KEY,DUPLICATE_ORDER_ID,HIGH_REVIEW,Clean grain is one row per order,one row per order_id,Clean order ID appears more than once.
+RULE006,STAGE_TO_CLEAN,MISSING_RECORD,SOURCE_ORDER_MISSING_FROM_CLEAN,REVIEW,Source order should be represented or explained,source key exists in clean or exclusion documented,Source order is missing from clean output.
+RULE007,CLEAN,UNEXPECTED_RECORD,CLEAN_ONLY_ORDER,HIGH_REVIEW,Clean rows need lineage,clean key has source key,Clean order has no matching source record.
+RULE008,STAGE_TO_CLEAN,VALUE_MISMATCH,ORDER_AMOUNT_MISMATCH,REVIEW,Amounts should stay aligned unless documented,source amount equals clean amount,Order amount differs between source and clean.
+RULE009,STAGE_TO_CLEAN,STATUS_MISMATCH,ORDER_STATUS_MISMATCH,REVIEW,Statuses should stay aligned unless documented,source status equals clean status,Order status differs between source and clean.
+RULE010,REPORTING,REPORTING_GRAIN,DUPLICATE_REPORTING_KEY,HIGH_REVIEW,Reporting grain should be unique,one row per date and country group,Reporting date-country group is duplicated.
+RULE011,REPORTING,CONTROL_TOTAL,COMPLETED_AMOUNT_MISMATCH,HIGH_REVIEW,Completed amounts should reconcile,reporting completed total equals clean completed total,Completed amount total does not reconcile.
+RULE012,REPORTING,REQUIRED_FIELD,NULL_REPORTING_METRIC,HIGH_REVIEW,Reporting metrics should be populated,metric columns are not null,Reporting metric is null.
+RULE013,SOURCE_FILE,SOURCE_FILE,UNEXPECTED_SOURCE_FILE,INFO,Unexpected source file may be valid,source file is expected or documented,Unexpected source file should be reviewed.
+RULE014,REPORTING,DATE_COVERAGE,MISSING_REPORTING_GROUP,REVIEW,Expected reporting combinations should exist,expected date-country group exists,Expected reporting group is missing.

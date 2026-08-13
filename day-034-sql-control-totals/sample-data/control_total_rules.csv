@@ -1,0 +1,15 @@
+control_id,stage_pair,control_type,control_name,source_population,target_population,expected_relationship,severity,review_message
+CTRL001,source_only,row_count,source_rows_received,all source sales rows,not applicable,row count greater than zero,HIGH,Source extract should contain rows.
+CTRL002,source_only,distinct_key,source_distinct_orders,non-null source order IDs,not applicable,distinct order count reviewed,HIGH,Repeated source orders should be explained.
+CTRL003,stage_only,accepted_review,stage_population_reconciliation,all staged rows,accepted plus review rows,stage equals accepted plus review,HIGH,Every staged row should be accepted or reviewed.
+CTRL004,stage_to_clean,row_count,accepted_to_clean_count,accepted staged rows,clean rows,exact match unless duplicate or exclusion documented,HIGH,Accepted rows should be represented in clean output.
+CTRL005,stage_to_clean,sum,accepted_to_clean_amount,accepted staged amounts,clean amounts,amounts should reconcile,HIGH,Amount changes between stage and clean need review.
+CTRL006,clean_to_reporting,sum,completed_amount_reconciliation,clean completed rows,reporting completed measures,completed totals should match,HIGH,Reporting completed total should reconcile to clean data.
+CTRL007,clean_to_reporting,sum,refund_amount_reconciliation,clean refunded rows,reporting refund measures,refund totals should match,HIGH,Refund totals should reconcile.
+CTRL008,source_to_clean,min_date,minimum_order_date,source order dates,clean order dates,boundary difference should be explained,MEDIUM,Changed minimum date may show filtering or loss.
+CTRL009,source_to_clean,max_date,maximum_order_date,source order dates,clean order dates,boundary difference should be explained,MEDIUM,Changed maximum date may show future or target-only data.
+CTRL010,source_only,status_count,status_distribution,source statuses,not applicable,status counts reviewed,MEDIUM,Unexpected status distribution needs review.
+CTRL011,source_only,source_file_count,file_distribution,source files,not applicable,file counts reviewed,MEDIUM,Missing file counts can explain missing data.
+CTRL012,clean_to_reporting,grouped_sum,grouped_completed_amount,clean completed by date and group,reporting completed by date and group,grouped totals should match,HIGH,Grand totals can hide group mismatch.
+CTRL013,reporting_only,grouped_count,reporting_grain,reporting rows,reporting date and group key,no duplicate reporting key,HIGH,Duplicate reporting grain can double count.
+CTRL014,clean_only,boundary,amount_boundaries,clean order amounts,not applicable,min and max amounts reviewed,MEDIUM,Abnormal amount boundaries need investigation.

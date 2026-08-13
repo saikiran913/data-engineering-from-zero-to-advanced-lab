@@ -1,0 +1,16 @@
+case_id,column_name,change_type,current_state,proposed_or_observed_state,likely_risk,consumer_impact,review_required
+SC001,source_batch_id,add,Not in expected schema,Observed in V1,Low,May affect SELECT star consumers,Yes
+SC002,order_currency,add,Not in expected schema,Observed in V2,Medium,May be intentional additive reporting field,Yes
+SC003,source_file,remove,Required audit column in expected schema,Missing from V2,High,Audit and lineage consumers may break,Yes
+SC004,customer_id,rename,Expected customer_id,Observed customer_identifier,High,Queries using customer_id may fail,Yes
+SC005,order_amount,type,Expected DECIMAL,Observed TEXT,High,Numeric calculations may fail or sort incorrectly,Yes
+SC006,order_date,type,Expected DATE,Observed TIMESTAMP,Medium,Date filters and grouping may change,Yes
+SC007,loaded_at,type,Expected TIMESTAMP,Observed DATE,Medium,Timestamp detail may be lost,Yes
+SC008,order_status,nullability,Expected non-null,Observed nullable,High,Status logic may receive missing values,Yes
+SC009,order_date,order,Expected position 4,Observed position 3,Medium,Position-sensitive exports may change,Yes
+SC010,order_id,key-related,Required business key,Still present as TEXT,Low,No immediate key issue,No
+SC011,country_group,semantic,Country grouping definition unclear,Observed same name and type,Medium,Reports may change meaning silently,Yes
+SC012,audit_loaded_by,add,Not in expected schema,Observed in V2,Low,Audit additive field may be acceptable,Yes
+SC013,source_system,add,Not in expected schema,Observed in V2,Low,May be useful lineage field,Yes
+SC014,customer_id,remove,Required customer identifier,Missing from V2,High,Customer-level consumers may break,Yes
+SC015,customer_identifier,possible_rename,Not expected,Similar to missing customer_id,High,Human review needed before mapping,Yes

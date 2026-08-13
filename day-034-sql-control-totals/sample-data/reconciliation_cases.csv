@@ -1,0 +1,15 @@
+case_id,business_question,source_stage,target_stage,control_type,expected_relationship,expected_difference,main_risk,recommended_check
+CASE001,Did the source extract contain rows,SOURCE,SOURCE,row_count,row count greater than zero,none,empty file,source row count
+CASE002,Did source duplicate orders reduce safely,SOURCE,STAGE,distinct_key,distinct keys reviewed,deduplication can reduce rows,wrong deduplication,source distinct order count
+CASE003,Do accepted and review reconcile,STAGE,STAGE,accepted_review,stage equals accepted plus review,none,hidden row loss,accepted-review reconciliation
+CASE004,Did accepted rows reach clean,STAGE,CLEAN,row_count,accepted count equals clean count unless documented,duplicates or exclusions may change count,missing accepted row,stage-clean count
+CASE005,Did reporting aggregate clean rows,CLEAN,REPORTING,row_count,reporting rows usually fewer than clean rows,aggregation difference expected,wrong grain comparison,clean-report row explanation
+CASE006,Do completed amounts reconcile,CLEAN,REPORTING,sum,completed totals match,none unless documented,incorrect reporting amount,completed amount reconciliation
+CASE007,Do date boundaries match,SOURCE,CLEAN,boundary,min and max dates explained,review exclusions or target-only rows can shift boundary,missing period,boundary control
+CASE008,Do grouped totals reconcile,CLEAN,REPORTING,grouped_sum,grouped totals match,none unless documented,grand total hides mismatch,grouped completed amount
+CASE009,Did every expected source file arrive,SOURCE,SOURCE,source_file_count,expected files represented,late or missing file must be explained,missing file,file count by source_file
+CASE010,Did status distribution change unexpectedly,SOURCE,STAGE,status_count,status counts explained,standardisation can change labels,unsupported statuses hidden,status count
+CASE011,Which source orders are missing from clean,SOURCE,CLEAN,source_only_key,missing keys have review reason,review exclusions expected,data loss,source-only check
+CASE012,Which clean orders have no source,SOURCE,CLEAN,target_only_key,no target-only keys expected,manual review only if documented,unexplained target row,target-only check
+CASE013,Is a country group missing from reporting,CLEAN,REPORTING,grouped_count,clean groups represented in reporting,zero groups may be absent by rule,missing group,grouped count control
+CASE014,Is reporting grain duplicated,REPORTING,REPORTING,grouped_count,one row per date and group,none,double counting,duplicate reporting key check
