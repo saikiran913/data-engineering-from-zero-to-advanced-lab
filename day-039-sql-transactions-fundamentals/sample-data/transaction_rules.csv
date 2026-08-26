@@ -1,0 +1,16 @@
+rule_id,scenario_name,validation_stage,rule_name,expected_condition,severity,review_message
+TR001,balance_transfer,pre_change,source_key_exists,Account 101 should exist,HIGH_REVIEW,Confirm the source account exists before any conceptual change.
+TR002,balance_transfer,pre_change,target_key_exists,Account 202 should exist,HIGH_REVIEW,Confirm the target account exists before any conceptual change.
+TR003,balance_transfer,pre_change,expected_affected_rows,Exactly 2 accounts should be targeted,HIGH_REVIEW,Do not continue if the target population is larger or smaller than expected.
+TR004,balance_transfer,post_change,total_balance_preserved,Grand total balance should remain unchanged,HIGH_REVIEW,Rollback conceptually if the before and after totals do not match.
+TR005,balance_transfer,post_change,no_negative_balance,No account balance should become negative,HIGH_REVIEW,Negative balances require review before commit.
+TR006,balance_transfer,post_change,unrelated_rows_unchanged,Only accounts 101 and 202 should change,REVIEW,Unexpected unrelated changes should trigger rollback thinking.
+TR007,order_status_review,pre_change,target_orders_exist,Orders O2001 and O2002 should exist,HIGH_REVIEW,Confirm target orders before conceptual status change.
+TR008,order_status_review,pre_change,expected_order_count,Exactly 2 orders should be targeted,HIGH_REVIEW,Target row count must match the plan.
+TR009,order_status_review,post_change,expected_order_status,Target orders should become COMPLETED,HIGH_REVIEW,Post-change status should match expectation.
+TR010,order_status_review,post_change,expected_review_flag,Target review flags should become No,REVIEW,Review flag should match the status decision.
+TR011,order_status_review,post_change,post_change_row_count,Before and expected-after order row counts should match,HIGH_REVIEW,No order rows should be lost in the expected-after snapshot.
+TR012,general_transaction,planning,rollback_condition,Rollback if row counts or control totals differ,HIGH_REVIEW,Rollback conditions should be defined before changes begin.
+TR013,general_transaction,planning,commit_condition,Commit only after validation passes,HIGH_REVIEW,Commit should be based on evidence.
+TR014,general_transaction,planning,autocommit_review,Platform autocommit behaviour should be understood,REVIEW,Do not assume transaction mode is the same everywhere.
+TR015,general_transaction,planning,backup_reminder,Rollback is not a backup,REVIEW,Recovery planning remains separate from transaction control.

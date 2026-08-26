@@ -1,0 +1,17 @@
+case_id,business_question,table_name,constraint_concept,candidate_columns,expected_rule,main_risk,recommended_validation
+CC001,Does one customer ID identify one customer,customers,PRIMARY_KEY,customer_id,Non-null and unique customer_id,Duplicate or null customers,Null check plus duplicate check
+CC002,Does one order ID identify one order,orders,PRIMARY_KEY,order_id,Non-null and unique order_id,Duplicate or null orders,Null check plus duplicate check
+CC003,Does one payment ID identify one payment,payments,PRIMARY_KEY,payment_id,Non-null and unique payment_id,Duplicate or null payments,Null check plus duplicate check
+CC004,Can an order line be identified by order and line number,order_lines,COMPOSITE_KEY,order_id + line_number,Combination should be unique,Wrong grain,Group by both columns
+CC005,Does each order customer exist,orders,FOREIGN_KEY,customer_id,Customer should exist in customers,Orphan orders,Left join orders to customers
+CC006,Does each payment order exist,payments,FOREIGN_KEY,order_id,Order should exist in orders,Orphan payments,Left join payments to orders
+CC007,Is product code unique,products,UNIQUE,product_code,Non-null product_code should be unique,Duplicate product code,Group by product_code
+CC008,Are order statuses allowed,orders,CHECK,order_status,Status in allowed order list,Unsupported status,WHERE status NOT IN allowed list
+CC009,Are payment statuses allowed,payments,CHECK,payment_status,Status in allowed payment list,Unsupported status,WHERE status NOT IN allowed list
+CC010,Are order amounts valid,orders,CHECK,order_amount,Amount greater than or equal to 0,Negative amount,Range check
+CC011,Are product prices valid,products,CHECK,unit_price,Unit price greater than 0,Zero or negative price,Range check
+CC012,Is order date required,orders,NOT_NULL,order_date,order_date should not be null,Missing report date,Null check
+CC013,Can a rule be validation-only,orders,VALIDATION_ONLY,order_amount + order_status,Refund logic requires business review,Rule may be contextual,Document and report only
+CC014,Is a note field worth constraining,products,NO_CONSTRAINT_NEEDED,optional_description,Optional text may be blank,Over-constraining,No constraint needed
+CC015,Can warehouse constraints be assumed enforced,all,NON_ENFORCED_CONCEPT,declared rules,Declared does not always mean enforced,False confidence,Run validation queries
+CC016,Is a surrogate key the same as a business key,customers,BUSINESS_VS_SURROGATE,customer_id,Meaning depends on design,Wrong identity assumption,Document key role

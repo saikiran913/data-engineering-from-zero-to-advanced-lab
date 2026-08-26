@@ -1,0 +1,19 @@
+query_id,query_name,query_goal,source_tables,required_columns,filter_columns,join_columns,sort_columns,aggregation_grain,known_risk
+QP001,exact_order_lookup,Find one order,orders_performance_sample,order_id customer_id order_date order_amount,order_id,,,"order",SELECT star may carry unused columns
+QP002,monthly_order_report,Report completed August orders,orders_performance_sample,order_id order_date country_group order_amount,order_date order_status,,order_date,"order",Date filter must match business period
+QP003,customer_history,Show orders with customer segment,orders_performance_sample customers_performance_sample,order_id customer_id customer_segment order_amount,customer_id,customer_id,order_date,"order",Join must preserve order grain
+QP004,order_item_revenue,Compare order amount to item total,orders_performance_sample order_items_performance_sample,order_id order_amount item_total_amount,,order_id,,"order",Raw item join multiplies order rows
+QP005,channel_report,Summarise revenue by channel,orders_performance_sample,channel total_amount,order_status,,,"channel",No customer join needed
+QP006,country_report,Summarise orders by country,orders_performance_sample,country_group order_count total_amount,order_date,,,"country_group",Sort only if report requires order
+QP007,unnecessary_customer_join,Count completed orders,orders_performance_sample customers_performance_sample,order_count,order_status,customer_id,,"all completed orders",Customer join contributes no output or filter
+QP008,select_star_extract,Explore raw rows,orders_performance_sample,all columns,order_date,,,"order",Acceptable briefly during exploration
+QP009,repeated_aggregate,Compute total order amount twice,orders_performance_sample,total_amount average_amount,order_status,,,"all completed orders",Repeated aggregation logic
+QP010,duplicate_join,Join order to items and count orders,orders_performance_sample order_items_performance_sample,order_id,order_status,order_id,,"order",Order rows multiply by item lines
+QP011,unnecessary_sort,Feed dashboard without required order,orders_performance_sample,order_id order_amount,order_status,,order_amount,"order",Final ORDER BY not needed
+QP012,unnecessary_distinct,Hide duplicate rows after item join,orders_performance_sample order_items_performance_sample,order_id,order_status,order_id,,"order",DISTINCT hides grain problem
+QP013,valid_pre_aggregation,Item total at order grain,order_items_performance_sample,total by order_id,,order_id,,"order",Pre-aggregation is valid at needed grain
+QP014,invalid_pre_aggregation,Need order-level detail but aggregate by customer,orders_performance_sample,customer_id total_amount,,customer_id,,"customer",Loses order grain
+QP015,outer_join_filter_caution,Show all orders with optional active customer label,orders_performance_sample customers_performance_sample,order_id customer_status,customer_status,customer_id,,"order",WHERE on right table can remove unmatched rows
+QP016,large_multi_cte_query,Reporting flow with many carried columns,orders_performance_sample customers_performance_sample order_items_performance_sample,many columns,order_date status,customer_id order_id,order_amount,"mixed",Wide CTE chain carries unused columns
+QP017,top_n_orders,Show highest completed orders,orders_performance_sample,order_id order_amount,order_status,,order_amount,"order",Sort is required for top-N
+QP018,small_lookup_ok,Check one customer status,customers_performance_sample,customer_id customer_status,customer_id,,,"customer",Already small and clear

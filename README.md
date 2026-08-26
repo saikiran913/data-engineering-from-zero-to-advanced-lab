@@ -75,7 +75,12 @@ Over time, this repository will cover:
 | Day 035 | [SQL Data Completeness Checks: Required Fields, Missing Keys, Date Coverage, and Expected Records](day-035-sql-data-completeness-checks/) | Available |
 | Day 036 | [SQL Exception Reporting: Review Queues, Severity Levels, and Investigable Data-Quality Outputs](day-036-sql-exception-reporting/) | Available |
 | Day 037 | [SQL Schema Validation: Column Contracts, Data Types, Required Fields, and Change Detection](day-037-sql-schema-validation/) | Available |
-| Day 038 | SQL Schema Validation Practice: Schema Drift, Breaking Changes, Consumer Impact, and Safe Compatibility Review | Coming Soon |
+| Day 038 | [SQL Constraint Concepts: Primary Keys, Foreign Keys, UNIQUE, CHECK, and NOT NULL](day-038-sql-constraint-concepts/) | Available |
+| Day 039 | [SQL Transactions Fundamentals: Atomicity, COMMIT, ROLLBACK, and Safe Multi-Step Changes](day-039-sql-transactions-fundamentals/) | Available |
+| Day 040 | [SQL Index Fundamentals: Faster Reads, Write Trade-offs, and Index Selection Thinking](day-040-sql-index-fundamentals/) | Available |
+| Day 041 | [SQL Query Plans for Beginners: EXPLAIN, Table Scans, Join Plans, and Cost Awareness](day-041-sql-query-plans-for-beginners/) | Available |
+| Day 042 | [SQL Performance Habits: Projection, Filtering, Join Reduction, and Avoiding Unnecessary Work](day-042-sql-performance-habits/) | Available |
+| Day 043 | SQL Performance Review: Query Shape, Repeated Scans, Join Growth, Sorting, and Validation-First Optimization | Coming Soon |
 
 ## Repository Philosophy
 
@@ -91,7 +96,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, and Day 037 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, and Day 042 are available.
 
 ## How to Use This Repository
 

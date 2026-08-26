@@ -1,0 +1,16 @@
+customer_id,customer_name,country,customer_status,signup_date,source_file,loaded_at
+C001,Retail Customer 001,India,ACTIVE,2026-01-05,customers_2026_01.csv,2026-02-01T08:00:00
+C002,Retail Customer 002,UK,ACTIVE,2026-01-07,customers_2026_01.csv,2026-02-01T08:00:00
+C003,Retail Customer 003,USA,INACTIVE,2026-01-10,customers_2026_01.csv,2026-02-01T08:00:00
+C004,Retail Customer 004,India,ACTIVE,2026-01-12,customers_2026_01.csv,2026-02-01T08:00:00
+C005,Retail Customer 005,,ACTIVE,2026-01-15,customers_2026_01.csv,2026-02-01T08:00:00
+C006,Retail Customer 006,Canada,PENDING,2026-01-18,customers_2026_01.csv,2026-02-01T08:00:00
+C007,Retail Customer 007,India,ACTIVE,2026-01-20,customers_2026_01.csv,2026-02-01T08:00:00
+C008,Retail Customer 008,UK,INACTIVE,2026-01-21,customers_2026_01.csv,2026-02-01T08:00:00
+C009,Retail Customer 009,USA,ACTIVE,2026-01-22,customers_2026_01.csv,2026-02-01T08:00:00
+C010,Retail Customer 010,India,ACTIVE,2026-01-24,customers_2026_01.csv,2026-02-01T08:00:00
+C010,Retail Customer 010 Duplicate,India,ACTIVE,2026-01-24,customers_2026_01.csv,2026-02-01T08:05:00
+,Retail Customer Missing Key,India,ACTIVE,2026-01-26,customers_2026_01.csv,2026-02-01T08:10:00
+C011,Retail Customer 011,UK,SUSPENDED,2026-01-27,customers_2026_01.csv,2026-02-01T08:15:00
+C012,Retail Customer 012,USA,ACTIVE,2026-01-28,customers_2026_01.csv,2026-02-01T08:20:00
+C013,Retail Customer 013,India,INACTIVE,2026-01-29,customers_2026_01.csv,2026-02-01T08:25:00

@@ -1,0 +1,14 @@
+table_name,column_name,total_rows,distinct_values,null_count,selectivity_band,common_filter_use,common_join_use,common_sort_use
+orders_workload,order_id,36,36,0,HIGH,HIGH,LOW,LOW
+orders_workload,customer_id,36,20,0,MEDIUM,HIGH,HIGH,LOW
+orders_workload,order_date,36,12,0,MEDIUM,HIGH,LOW,HIGH
+orders_workload,order_status,36,4,0,LOW,HIGH,LOW,MEDIUM
+orders_workload,country_group,36,4,0,LOW,MEDIUM,LOW,MEDIUM
+orders_workload,order_amount,36,31,0,HIGH,LOW,LOW,MEDIUM
+orders_workload,source_file,36,1,0,LOW,LOW,LOW,LOW
+orders_workload,loaded_at,36,12,0,MEDIUM,LOW,LOW,MEDIUM
+customers_workload,customer_id,24,24,0,HIGH,HIGH,HIGH,LOW
+customers_workload,customer_status,24,2,0,LOW,MEDIUM,LOW,MEDIUM
+customers_workload,country_group,24,4,0,LOW,LOW,LOW,MEDIUM
+customers_workload,signup_date,24,24,0,HIGH,MEDIUM,LOW,HIGH
+customers_workload,customer_segment,24,3,0,LOW,LOW,LOW,MEDIUM

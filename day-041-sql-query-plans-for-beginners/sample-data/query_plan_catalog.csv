@@ -1,0 +1,30 @@
+plan_id,query_name,step_number,parent_step,operator_name,table_name,estimated_rows,estimated_cost,filter_description,join_description,sort_description,notes
+P001,Exact order lookup,1,2,INDEX_LOOKUP,orders_plan_sample,1,2.0,order_id = OP5001,,,Selective lookup by order_id.
+P001,Exact order lookup,2,3,PROJECT,,1,0.2,,,,Return selected order columns.
+P001,Exact order lookup,3,,LIMIT,,1,0.1,,,,Return final row.
+P002,Full status report,1,2,TABLE_SCAN,orders_plan_sample,36,8.0,,,,Small sample scan for all orders.
+P002,Full status report,2,3,AGGREGATE,,4,3.0,group by order_status,,,Summarise rows by status.
+P002,Full status report,3,,SORT,,4,1.0,,,order_status,Sort grouped output.
+P003,Customer order join,1,3,TABLE_SCAN,orders_plan_sample,36,8.0,,,orders.customer_id = customers.customer_id,,Read order side.
+P003,Customer order join,2,3,TABLE_SCAN,customers_plan_sample,24,4.0,,,orders.customer_id = customers.customer_id,,Read customer side.
+P003,Customer order join,3,4,JOIN,,36,12.0,,customer_id join,,Join orders to customers.
+P003,Customer order join,4,,PROJECT,,36,0.5,,,,Return joined columns.
+P004,Recent order report,1,2,TABLE_SCAN,orders_plan_sample,36,8.0,,,,Read orders.
+P004,Recent order report,2,3,FILTER,,12,2.0,order_date >= 2026-05-09,,,Reduce to recent dates.
+P004,Recent order report,3,,SORT,,12,4.0,,,order_date desc,Sort recent orders.
+P005,Grouped country summary,1,2,TABLE_SCAN,orders_plan_sample,36,8.0,,,,Read order rows.
+P005,Grouped country summary,2,3,FILTER,,28,2.0,order_status = COMPLETED,,,Keep completed orders.
+P005,Grouped country summary,3,,AGGREGATE,,4,5.0,group by country_group,,,Group completed orders by country.
+P006,Sorted customer history,1,2,TABLE_SCAN,orders_plan_sample,36,8.0,,,,Read order rows.
+P006,Sorted customer history,2,3,FILTER,,3,2.0,customer_id = C001,,,Selective customer filter.
+P006,Sorted customer history,3,,SORT,,3,1.0,,,order_date desc,Sort customer history.
+P007,Scan versus lookup plan A,1,2,TABLE_SCAN,orders_plan_sample,36,8.0,order_id = OP5001,,,Scan plan for exact lookup.
+P007,Scan versus lookup plan A,2,,FILTER,,1,2.0,order_id = OP5001,,,Filter after scan.
+P008,Scan versus lookup plan B,1,2,INDEX_LOOKUP,orders_plan_sample,1,2.0,order_id = OP5001,,,Lookup plan for exact order.
+P008,Scan versus lookup plan B,2,,PROJECT,,1,0.2,,,,Return selected columns.
+P009,Large sort after join,1,3,TABLE_SCAN,orders_plan_sample,36,8.0,,,,Order side scan.
+P009,Large sort after join,2,3,TABLE_SCAN,customers_plan_sample,24,4.0,,,,Customer side scan.
+P009,Large sort after join,3,4,JOIN,,36,12.0,,customer_id join,,Join before sorting.
+P009,Large sort after join,4,,SORT,,36,7.0,,,order_amount desc,Sort joined rows.
+P010,Warehouse broad scan,1,2,TABLE_SCAN,orders_plan_sample,36,6.0,monthly report,,,Warehouse-style broad scan concept.
+P010,Warehouse broad scan,2,,AGGREGATE,,12,4.0,group by order_date,,,Aggregate for report.

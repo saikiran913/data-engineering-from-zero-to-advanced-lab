@@ -1,0 +1,17 @@
+case_id,table_name,candidate_columns,query_pattern,selectivity_band,frequency_band,read_write_pattern,candidate_rating,main_reason
+IC001,orders_workload,order_id,exact order lookup,HIGH,HIGH,READ_HEAVY,STRONG_CANDIDATE,Frequent high-importance lookup on a high-selectivity key.
+IC002,orders_workload,customer_id,customer order history,MEDIUM,HIGH,READ_HEAVY,POSSIBLE_CANDIDATE,Frequent filters and joins may make this useful.
+IC003,orders_workload,order_status,status dashboard,LOW,HIGH,READ_HEAVY,WEAK_CANDIDATE,Low selectivity alone may limit usefulness.
+IC004,orders_workload,order_date,date range report,MEDIUM,HIGH,READ_HEAVY,POSSIBLE_CANDIDATE,Frequent date-range reporting may benefit depending on platform.
+IC005,orders_workload,"customer_id,order_date",customer date filter,MEDIUM,HIGH,READ_HEAVY,STRONG_CANDIDATE,Columns are commonly filtered together.
+IC006,orders_workload,"order_status,order_date",status date filter,LOW,MEDIUM,MIXED,POSSIBLE_CANDIDATE,Composite pattern may help some queries but needs evidence.
+IC007,orders_workload,loaded_at,write-heavy ingestion,MEDIUM,HIGH,WRITE_HEAVY,REVIEW_PLATFORM,Write-heavy workloads need careful trade-off review.
+IC008,orders_workload,source_file,occasional admin lookup,LOW,LOW,READ_HEAVY,WEAK_CANDIDATE,Low frequency and low selectivity.
+IC009,customers_workload,customer_id,customer exact lookup,HIGH,HIGH,READ_HEAVY,STRONG_CANDIDATE,High-selectivity frequent lookup and join key.
+IC010,customers_workload,customer_status,status report,LOW,MEDIUM,READ_HEAVY,WEAK_CANDIDATE,Very low cardinality status column.
+IC011,customers_workload,signup_date,signup range report,HIGH,MEDIUM,READ_HEAVY,POSSIBLE_CANDIDATE,Range queries may benefit depending on table size.
+IC012,customers_workload,customer_segment,segment report,LOW,LOW,READ_HEAVY,WEAK_CANDIDATE,Low frequency and low cardinality.
+IC013,orders_workload,"customer_id,order_date,order_status",overlapping composite,MEDIUM,MEDIUM,MIXED,REVIEW_PLATFORM,May overlap with smaller composite candidates.
+IC014,orders_workload,country_group,country report,LOW,MEDIUM,READ_HEAVY,WEAK_CANDIDATE,Few country groups reduce selectivity.
+IC015,orders_workload,order_amount,sort-heavy amount query,HIGH,LOW,READ_HEAVY,POSSIBLE_CANDIDATE,High selectivity but low frequency.
+IC016,orders_workload,traditional index on analytical fact,analytics,MEDIUM,LOW,READ_HEAVY,REVIEW_PLATFORM,Warehouse platforms may use other optimisation mechanisms.

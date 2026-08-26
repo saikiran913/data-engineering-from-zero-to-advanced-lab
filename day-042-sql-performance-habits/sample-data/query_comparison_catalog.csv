@@ -1,0 +1,13 @@
+comparison_id,query_goal,version_a_pattern,version_b_pattern,column_difference,row_difference,join_difference,sort_difference,expected_result_relationship,review_note
+QC001,Find one order,SELECT star,Explicit required columns,Fewer columns,Same rows,No change,No change,Equivalent if downstream needs only selected columns,Validate column contract
+QC002,August completed orders,Broad read then filter,Filter in first CTE,Same columns,Same rows,No change,No change,Equivalent if filter logic is identical,Validate dates count and totals
+QC003,Count completed orders,Join customers,Orders only,Same columns,Same rows if no hidden rule,Removed join,No change,Equivalent only if customer table adds no rule,Confirm business logic
+QC004,Order item totals,Raw item join,Pre-aggregated item totals,Same useful columns,Fewer joined rows,Reduced item join input,No change,Equivalent at order grain,Validate order count and totals
+QC005,Duplicate order rows,DISTINCT after item join,Aggregate items by order,Similar columns,Fewer rows by design,Corrected grain,No change,Should preserve order grain,Check distinct order IDs
+QC006,Dashboard extract,Sorted output,No ORDER BY,Same columns,Same rows,No change,Removed sort,Equivalent only if order not required,Confirm consumer contract
+QC007,Repeated total logic,Repeat aggregate twice,Reusable CTE,Same columns,Same rows,No change,No change,Equivalent logically,Platform may handle CTE differently
+QC008,Order detail needed,Aggregate by customer first,Keep order detail,Different grain,Different rows,No change,No change,Not equivalent,Do not pre-aggregate away order detail
+QC009,Optional customer report,LEFT JOIN then WHERE status,Filter active customers in join input,Same columns,Different unmatched rows possible,Changed outer join semantics,No change,Potentially non-equivalent,Validate unmatched rows
+QC010,Top-N orders,No sort,ORDER BY amount LIMIT 10,Same columns,Fewer rows,No change,Required sort,Not equivalent because top-N changes result,Sort is purposeful
+QC011,Wide CTE chain,Carry all columns,Carry required columns,Fewer columns,Same rows,No change,No change,Equivalent if downstream requirements are preserved,Validate final columns
+QC012,Date report,Filter loaded_at,Filter order_date,Same columns,Different rows,No change,No change,Not equivalent if business date is order_date,Validate period definition

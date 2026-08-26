@@ -131,6 +131,5 @@ All executable SQL in Day 037 is read-only. No schema is altered. No column is a
 ## Navigation
 
 - Previous Day: [Day 036 - SQL Exception Reporting](../day-036-sql-exception-reporting/)
-- Next Day: Day 038 - SQL Schema Validation Practice: Schema Drift, Breaking Changes, Consumer Impact, and Safe Compatibility Review - Coming Soon
+- Next Day: [Day 038 - SQL Constraint Concepts: Primary Keys, Foreign Keys, UNIQUE, CHECK, and NOT NULL](../day-038-sql-constraint-concepts/)
 - [Back to Main Learning Path](../README.md)
-

@@ -1,0 +1,13 @@
+case_id,business_question,query_pattern,main_operator,estimated_rows_band,cost_band,main_risk,recommended_review
+QC001,Find one order by ID,exact lookup,INDEX_LOOKUP,LOW,LOW,Assuming lookup is always chosen,Check indexes and platform plan.
+QC002,Scan small customer table,small reference scan,TABLE_SCAN,LOW,LOW,Over-optimising a small scan,Confirm table size and query purpose.
+QC003,Build full status report,full report,TABLE_SCAN,HIGH,MEDIUM,Calling a needed scan bad,Check whether report needs most rows.
+QC004,Filter recent dates,date filter,FILTER,MEDIUM,MEDIUM,Ignoring row reduction,Compare estimated rows before and after filter.
+QC005,Join orders to customers,parent child join,JOIN,MEDIUM,HIGH,Ignoring join output size,Review join keys and table grain.
+QC006,Sort recent orders,sort report,SORT,MEDIUM,MEDIUM,Ignoring sort population,Check rows entering sort.
+QC007,Group by country,aggregate report,AGGREGATE,LOW,MEDIUM,Blaming aggregate alone,Check input rows and grouping purpose.
+QC008,Estimated rows mismatch,row estimate review,FILTER,HIGH,HIGH,Treating estimate as actual,Compare with execution evidence later.
+QC009,Warehouse broad scan,warehouse report,TABLE_SCAN,HIGH,MEDIUM,Judging warehouse scan like OLTP scan,Review platform storage strategy.
+QC010,EXPLAIN ANALYZE caution,plan inspection,EXPLAIN_ANALYZE,HIGH,HIGH,Running execution-style explain carelessly,Verify whether it executes the query.
+QC011,No problem plan,tiny lookup,INDEX_LOOKUP,LOW,LOW,Overreacting without context,Document no action needed.
+QC012,Index exists but scan chosen,optimizer choice,TABLE_SCAN,MEDIUM,MEDIUM,Assuming index must be used,Review selectivity and optimizer evidence.

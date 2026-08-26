@@ -1,0 +1,17 @@
+case_id,business_question,scenario_type,related_steps,atomicity_need,pre_change_check,post_change_check,rollback_condition,main_risk
+TC001,Can a value move between two balances safely,related_multi_step,Decrease Account A and increase Account B,High,Confirm both accounts and total before change,Total balance preserved and only two accounts changed,Total mismatch or unexpected account changed,Partial balance movement
+TC002,Can order status and review flag change together,related_multi_step,Change status and clear review flag,High,Confirm target orders and current status,Expected status and flag match,Unexpected row count or flag mismatch,Partial order state
+TC003,Can a customer status and audit marker change together,related_multi_step,Change status and audit state,Medium,Confirm customer key exists,Expected status and audit evidence match,Missing audit evidence,Incomplete audit trail
+TC004,Can parent and child values be corrected together,parent_child,Correct parent key and related child references,High,Validate parent and child keys,No orphan child remains,Orphans remain,Relationship inconsistency
+TC005,Can a reference-data value be corrected safely,reference_data,Change one allowed status label,Medium,Count affected rows,Expected values only remain,Unexpected value remains,Consumer confusion
+TC006,Should one independent note change use a broad transaction,single_independent,One low-risk independent row,Low,Confirm exact key,One row changed,More than one row affected,Overly broad scope
+TC007,Does a read-only report need transaction planning,read_only,Run a SELECT report,None,Confirm query purpose,No data change expected,Not applicable,Unnecessary transaction complexity
+TC008,What if expected one row but multiple match,failure_scenario,Target by weak filter,High,Count target rows,Exactly one row affected,More than one row matches,Broad filter risk
+TC009,What if source key is missing,failure_scenario,Move value from missing source,High,Confirm source key exists,Do not continue,Source key missing,Invalid starting state
+TC010,What if target key is missing,failure_scenario,Move value to missing target,High,Confirm target key exists,Do not continue,Target key missing,Invalid target state
+TC011,What if post-check total mismatches,failure_scenario,After snapshot total differs,High,Record before total,Compare after total,Control total mismatch,Undetected data loss
+TC012,What if unrelated rows changed,failure_scenario,Unexpected extra row changed,High,Snapshot unrelated rows,Confirm unchanged rows,Unrelated difference found,Unexpected side effect
+TC013,What if commit happens too early,failure_scenario,Commit before validation,High,Define post-checks first,Validate before commit,Validation fails after commit,Recovery complexity
+TC014,Can rollback help after failed validation,rollback_thinking,Rollback uncommitted changes,High,Define rollback condition,Validation failure triggers rollback,Validation fails,Preserve consistency
+TC015,Is rollback a backup,misconception,Assume rollback fixes everything,None,Review platform and backup plan,Use recovery plan after commit,Committed bad change,False safety
+TC016,Can unrelated changes share one transaction,scope_review,Combine many unrelated changes,Medium,Separate purposes,Keep scope narrow,Unrelated failure blocks all,Too broad scope

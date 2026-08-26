@@ -1,0 +1,21 @@
+query_id,query_name,table_name,query_type,filter_columns,join_columns,sort_columns,frequency_band,importance_band,read_or_write_pattern
+Q001,Exact order lookup,orders_workload,lookup,order_id,,order_id,HIGH,HIGH,READ_HEAVY
+Q002,Customer order history,orders_workload,filter,customer_id,,order_date,HIGH,HIGH,READ_HEAVY
+Q003,Recent orders date range,orders_workload,range_report,order_date,,order_date,HIGH,HIGH,READ_HEAVY
+Q004,Status dashboard,orders_workload,aggregate,order_status,,order_status,HIGH,MEDIUM,READ_HEAVY
+Q005,Country report,orders_workload,aggregate,country_group,,country_group,MEDIUM,MEDIUM,READ_HEAVY
+Q006,Customer order join,orders_workload,join,customer_id,customer_id,,HIGH,HIGH,READ_HEAVY
+Q007,Recent order sort,orders_workload,sort,order_date,,order_date,MEDIUM,MEDIUM,READ_HEAVY
+Q008,Nightly order load,orders_workload,write,,,,HIGH,HIGH,WRITE_HEAVY
+Q009,Append-heavy audit load,orders_workload,write,loaded_at,,,HIGH,MEDIUM,WRITE_HEAVY
+Q010,Occasional admin lookup,orders_workload,lookup,source_file,,loaded_at,LOW,LOW,READ_HEAVY
+Q011,Customer date filter,orders_workload,multi_filter,"customer_id,order_date",,order_date,HIGH,HIGH,READ_HEAVY
+Q012,Status date filter,orders_workload,multi_filter,"order_status,order_date",,order_date,MEDIUM,MEDIUM,MIXED
+Q013,Customer exact lookup,customers_workload,lookup,customer_id,,customer_id,HIGH,HIGH,READ_HEAVY
+Q014,Customer status report,customers_workload,aggregate,customer_status,,customer_status,MEDIUM,LOW,READ_HEAVY
+Q015,Customer signup range,customers_workload,range_report,signup_date,,signup_date,MEDIUM,MEDIUM,READ_HEAVY
+Q016,Segment report,customers_workload,aggregate,customer_segment,,customer_segment,LOW,MEDIUM,READ_HEAVY
+Q017,Customer ingestion load,customers_workload,write,,,,MEDIUM,HIGH,WRITE_HEAVY
+Q018,Low-frequency country extract,customers_workload,filter,country_group,,country_group,LOW,LOW,READ_HEAVY
+Q019,Important customer join,customers_workload,join,customer_id,customer_id,,HIGH,HIGH,READ_HEAVY
+Q020,Analytical wide scan,orders_workload,analytics,"order_status,country_group,order_date",,order_amount,LOW,HIGH,READ_HEAVY

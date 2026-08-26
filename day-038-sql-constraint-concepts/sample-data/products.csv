@@ -1,0 +1,16 @@
+product_id,product_code,product_name,category,unit_price,product_status,source_file,loaded_at
+PR001,SKU-001,Product 001,Electronics,1200.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR002,SKU-002,Product 002,Home,450.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR003,SKU-003,Product 003,Clothing,180.00,INACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR004,SKU-004,Product 004,Books,90.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR005,SKU-005,Product 005,Electronics,0.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR006,SKU-006,Product 006,Home,-25.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR007,SKU-007,Product 007,Clothing,320.00,DISCONTINUED,products_2026_02.csv,2026-02-01T06:00:00
+PR008,SKU-008,Product 008,Books,150.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR009,SKU-009,Product 009,Electronics,2200.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR010,SKU-010,Product 010,Home,610.00,ACTIVE,products_2026_02.csv,2026-02-01T06:00:00
+PR011,SKU-010,Product 011,Home,620.00,ACTIVE,products_2026_02.csv,2026-02-01T06:05:00
+PR012,,Product Missing Code,Books,75.00,ACTIVE,products_2026_02.csv,2026-02-01T06:10:00
+PR013,SKU-013,Product 013,Toys,250.00,DRAFT,products_2026_02.csv,2026-02-01T06:15:00
+PR014,SKU-014,Product 014,Electronics,999.00,ACTIVE,products_2026_02.csv,2026-02-01T06:20:00
+PR015,SKU-015,Product 015,Clothing,140.00,INACTIVE,products_2026_02.csv,2026-02-01T06:25:00

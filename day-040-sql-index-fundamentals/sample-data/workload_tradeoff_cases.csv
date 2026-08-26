@@ -1,0 +1,13 @@
+case_id,workload_description,read_frequency,write_frequency,table_size_band,index_count_band,main_tradeoff,recommended_thinking
+WT001,Read-heavy lookup table,HIGH,LOW,MEDIUM,LOW,Reads may benefit with limited write cost,Review high-selectivity lookup columns.
+WT002,Write-heavy ingestion table,LOW,HIGH,LARGE,MEDIUM,Each index may add write maintenance,Be conservative and require evidence.
+WT003,Mixed operational table,MEDIUM,MEDIUM,MEDIUM,MEDIUM,Balance read gains against write cost,Prioritise important frequent queries.
+WT004,Analytical fact table,MEDIUM,HIGH,LARGE,LOW,Traditional indexes may not be primary tool,Review platform-specific pruning and clustering.
+WT005,Small reference table,LOW,LOW,SMALL,LOW,Full scans may be cheap,Do not over-index small tables automatically.
+WT006,Large order table,HIGH,MEDIUM,LARGE,LOW,Important filters may benefit,Profile selectivity and workload frequency.
+WT007,Over-indexed table,HIGH,HIGH,LARGE,HIGH,Write cost and storage overhead may be high,Review unused or overlapping indexes conceptually.
+WT008,No-index-needed small table,LOW,LOW,SMALL,NONE,Index overhead may exceed benefit,Keep design simple unless evidence changes.
+WT009,Composite customer-date case,HIGH,MEDIUM,LARGE,LOW,Column order matters,Match common filter pattern.
+WT010,Warehouse-specific case,HIGH,HIGH,LARGE,LOW,Platform may use non-index mechanisms,Review warehouse tuning approach separately.
+WT011,Rare admin lookup,LOW,LOW,MEDIUM,LOW,Rare query may not justify permanent index,Prefer evidence before adding overhead.
+WT012,Sort-heavy reporting,HIGH,LOW,LARGE,LOW,Sort pattern may matter,Validate with query plans in real systems.

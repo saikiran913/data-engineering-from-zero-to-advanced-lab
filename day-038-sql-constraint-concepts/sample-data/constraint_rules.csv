@@ -1,0 +1,16 @@
+rule_id,table_name,constraint_concept,rule_name,column_or_columns,expected_condition,severity,issue_category,review_message
+CR001,customers,PRIMARY_KEY,Customer ID identifies one customer,customer_id,customer_id should be non-null and unique,HIGH_REVIEW,KEY_RULE,Customer key must identify one customer row.
+CR002,orders,PRIMARY_KEY,Order ID identifies one order,order_id,order_id should be non-null and unique,HIGH_REVIEW,KEY_RULE,Order key must identify one order row.
+CR003,payments,PRIMARY_KEY,Payment ID identifies one payment,payment_id,payment_id should be non-null and unique,HIGH_REVIEW,KEY_RULE,Payment key must identify one payment row.
+CR004,order_lines,COMPOSITE_KEY,Order line grain concept,order_id + line_number,combination should be non-null and unique,REVIEW,COMPOSITE_KEY_RULE,Composite keys use more than one column to identify a row.
+CR005,orders,FOREIGN_KEY,Order customer exists,customer_id,non-null customer_id should match customers.customer_id,HIGH_REVIEW,RELATIONSHIP_RULE,Order references a customer that should exist.
+CR006,payments,FOREIGN_KEY,Payment order exists,order_id,non-null order_id should match orders.order_id,HIGH_REVIEW,RELATIONSHIP_RULE,Payment references an order that should exist.
+CR007,products,UNIQUE,Product code is unique,product_code,non-null product_code should be unique,REVIEW,UNIQUE_RULE,Product codes should not duplicate.
+CR008,orders,CHECK,Order status allowed list,order_status,status should be COMPLETED PENDING CANCELLED or REFUNDED,REVIEW,DOMAIN_RULE,Order status should use documented values.
+CR009,payments,CHECK,Payment status allowed list,payment_status,status should be PAID PENDING FAILED or REFUNDED,REVIEW,DOMAIN_RULE,Payment status should use documented values.
+CR010,orders,CHECK,Order amount range,order_amount,amount should be greater than or equal to 0,REVIEW,RANGE_RULE,Negative order amounts require review.
+CR011,products,CHECK,Product price range,unit_price,unit_price should be greater than 0,REVIEW,RANGE_RULE,Product price should be positive.
+CR012,orders,NOT_NULL,Order date is required,order_date,order_date should not be null,HIGH_REVIEW,REQUIRED_FIELD,Order date is required for reporting.
+CR013,products,NOT_NULL,Product code is required,product_code,product_code should not be null,HIGH_REVIEW,REQUIRED_FIELD,Product code is required for product lookup.
+CR014,customers,CHECK,Customer status allowed list,customer_status,status should be ACTIVE or INACTIVE,REVIEW,DOMAIN_RULE,Customer status should use documented values.
+CR015,payments,NOT_NULL,Payment amount is required,payment_amount,payment_amount should not be null,HIGH_REVIEW,REQUIRED_FIELD,Payment amount is required for reconciliation.

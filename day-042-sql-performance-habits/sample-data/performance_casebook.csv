@@ -1,0 +1,17 @@
+case_id,business_question,current_pattern,main_unnecessary_work,safer_habit,correctness_risk,recommended_validation
+PCAS001,Find one order,SELECT star from orders,Wide projection,Select required columns only,Downstream may expect missing columns,Compare column contract and key count
+PCAS002,Monthly completed orders,Filter after broad CTE,Late filtering,Apply date and status filters where safe,Date range may change,Compare row count min max dates and totals
+PCAS003,Count completed orders,Join customers but use no customer data,Unnecessary join,Remove join after confirming no hidden rule,Hidden customer eligibility rule may exist,Compare count and business requirements
+PCAS004,Order totals with item rows,Raw order-to-item join,Row multiplication,Pre-aggregate items to order grain,Line detail may be needed,Compare order count and item totals
+PCAS005,Segment revenue,Repeated aggregation in branches,Repeated aggregation,Reuse clear aggregated CTE,Engine may not reuse physically,Compare grouped totals
+PCAS006,Dashboard extract,ORDER BY with no consumer requirement,Unnecessary sort,Remove sort if order is not needed,Consumer may rely on order,Confirm contract with consumer
+PCAS007,Duplicate output after join,DISTINCT after join,Suspicious DISTINCT,Fix join grain or aggregation,May remove meaningful duplicates,Check keys and row multiplication
+PCAS008,Order item total by order,Join raw item lines to orders,No pre-aggregation,Aggregate items by order first,Wrong if line detail needed,Compare order count and item total
+PCAS009,Order detail report,Aggregate by customer first,Wrong pre-aggregation grain,Keep order grain,Order-level detail lost,Compare distinct order IDs
+PCAS010,Optional customer status,LEFT JOIN then WHERE customer status,Unsafe filter movement,Filter in join input or preserve unmatched logic,Unmatched rows may be removed,Compare unmatched order count
+PCAS011,August report,Uses loaded_at month instead of order_date,Date-filter mismatch,Filter by business date,Wrong business period,Compare min max order_date
+PCAS012,Status label repeated,Same CASE repeated many times,Repeated expression,Derive status label once for clarity,Derived logic may change,Compare grouped status labels
+PCAS013,CTE rewrite request,Assumes CTE is faster,CTE misconception,Use CTE for clarity and validate,Platform may inline or materialize,Review output and plan evidence
+PCAS014,Small lookup already clear,Exact customer lookup,No major unnecessary work,Leave query simple,Over-optimising adds complexity,Confirm result and stop
+PCAS015,Country report,Sort before filtering,Unnecessary large sort,Filter first then sort final output,Filter movement must preserve result,Compare country totals
+PCAS016,Rewrite validation missing,Improved query not checked,No validation,Add count key total grouped checks,Silent logic change,Run reconciliation queries

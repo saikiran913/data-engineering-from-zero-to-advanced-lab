@@ -1,0 +1,9 @@
+case_id,query_goal,plan_a_summary,plan_b_summary,main_difference,estimated_rows_difference,cost_difference,beginner_interpretation
+PC001,Exact order lookup,Scan 36 rows then filter,Lookup 1 row by order_id,scan versus lookup,35,7.8,Lookup looks narrower in this simplified same-platform example.
+PC002,Recent order report,Filter after scan then sort 12 rows,Sort all rows then filter,early filter versus late filter,24,5.0,Reducing rows before sorting can reduce downstream work conceptually.
+PC003,Customer order join,Join all rows then filter customer,Filter one customer then join,large join versus smaller join,33,8.0,Filtering earlier may reduce join input.
+PC004,Grouped country summary,Aggregate all orders,Filter completed then aggregate,aggregate over large versus reduced input,8,3.0,Aggregation after filtering may process fewer rows.
+PC005,Small customer lookup,Small table scan,Index lookup on small table,small scan versus lookup,23,1.0,Small table scan may be reasonable.
+PC006,Data volume growth,Same query at 36 rows,Same query at 360000 rows,volume increase,359964,120.0,Plans can change as data grows.
+PC007,Index-added concept,Scan exact key,Lookup exact key after index concept,index-added scenario,35,6.5,Index may help selective lookup but must be verified.
+PC008,Sort placement,Sort before filter,Filter before sort,sort before after filter,24,4.0,Sort after row reduction may be cheaper conceptually.

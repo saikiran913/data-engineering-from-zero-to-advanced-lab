@@ -1,0 +1,11 @@
+operator_name,operator_category,basic_meaning,common_input,common_output,beginner_caution
+TABLE_SCAN,Access,Read rows from a table or a large portion of it,Table rows,Rows for later steps,A scan is not automatically bad.
+INDEX_LOOKUP,Access,Use an index-like access path to find candidate rows,Search value,Matching rows,A lookup is not automatically good.
+FILTER,Row reduction,Apply a WHERE-like condition,Input rows,Fewer matching rows,Visual order may not equal exact engine order.
+JOIN,Combination,Combine rows from two inputs,Two row sets,Matched combined rows,Row growth can be expected for one-to-many data.
+SORT,Ordering,Order rows for final output or later step,Input rows,Ordered rows,Large sorts can be expensive conceptually.
+AGGREGATE,Summary,Group or summarise rows,Input rows,Grouped or summary rows,Aggregation may process many input rows first.
+LIMIT,Reduction,Return a limited number of rows,Ordered or unordered rows,Smaller result set,Limit does not always remove earlier work.
+PROJECT,Shape,Choose output columns,Input rows,Selected columns,Projection does not mean rows were filtered.
+MATERIALIZE,Intermediate,Store or reuse an intermediate result conceptually,Intermediate rows,Reusable row set,Implementation varies by platform.
+UNION_ALL,Combination,Stack rows from multiple inputs,Two or more row sets,Combined rows,Preserves rows and may increase row count.
