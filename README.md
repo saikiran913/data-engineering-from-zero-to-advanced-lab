@@ -80,7 +80,15 @@ Over time, this repository will cover:
 | Day 040 | [SQL Index Fundamentals: Faster Reads, Write Trade-offs, and Index Selection Thinking](day-040-sql-index-fundamentals/) | Available |
 | Day 041 | [SQL Query Plans for Beginners: EXPLAIN, Table Scans, Join Plans, and Cost Awareness](day-041-sql-query-plans-for-beginners/) | Available |
 | Day 042 | [SQL Performance Habits: Projection, Filtering, Join Reduction, and Avoiding Unnecessary Work](day-042-sql-performance-habits/) | Available |
-| Day 043 | SQL Performance Review: Query Shape, Repeated Scans, Join Growth, Sorting, and Validation-First Optimization | Coming Soon |
+| Day 043 | [SQL for Semi-Structured Data: JSON Fields, Nested Values, and Validation Concepts](day-043-sql-semi-structured-data/) | Available |
+| Day 044 | [Command Line Fundamentals for Data Engineers: Files, Directories, Paths, and Help Commands](day-044-command-line-fundamentals/) | Available |
+| Day 045 | [Bash Pipes and Redirection: Connecting Commands, Standard Output, and Error Handling](day-045-bash-pipes-and-redirection/) | Available |
+| Day 046 | [Bash Variables and Shell Scripts: Reusable Commands and Safe Automation Basics](day-046-bash-variables-and-shell-scripts/) | Available |
+| Day 047 | [Git Fundamentals: Repositories, Commits, Status, Logs, and Reproducible Work](day-047-git-fundamentals/) | Available |
+| Day 048 | [Git Branching and Merging: Feature Work, Conflicts, and Safe Collaboration](day-048-git-branching-and-merging/) | Available |
+| Day 049 | [Git Remote Workflows: Clone, Fetch, Pull, Push, and Pull Request Thinking](day-049-git-remote-workflows/) | Available |
+| Day 050 | [Python for Data Engineers: Setup, Interpreter, Scripts, and Virtual Environments](day-050-python-setup-and-virtual-environments/) | Available |
+| Day 051 | Python Basics for Data Engineers: Variables, Data Types, Operators, and Simple Expressions | Coming Soon |
 
 ## Repository Philosophy
 
@@ -96,7 +104,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, and Day 042 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, Day 042, Day 043, Day 044, Day 045, Day 046, Day 047, Day 048, Day 049, and Day 050 are available.
 
 ## How to Use This Repository
 

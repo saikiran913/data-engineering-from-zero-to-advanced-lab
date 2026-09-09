@@ -1,0 +1,12 @@
+Step 1: Receive source file
+Step 2: Confirm file name and location
+Step 3: Preview the first few records
+Step 4: Validate header columns
+Step 5: Validate row count
+Step 6: Check for empty required fields
+Step 7: Load staging data
+Step 8: Run completeness checks
+Step 9: Run duplicate checks
+Step 10: Review warning records
+Step 11: Publish approved output
+Step 12: Record pipeline summary

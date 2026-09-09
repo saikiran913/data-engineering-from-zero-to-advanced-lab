@@ -1,0 +1,9 @@
+data-engineering-project/
+├── data/
+│   ├── raw/
+│   ├── staging/
+│   └── clean/
+├── scripts/
+├── sql/
+├── logs/
+└── README.md

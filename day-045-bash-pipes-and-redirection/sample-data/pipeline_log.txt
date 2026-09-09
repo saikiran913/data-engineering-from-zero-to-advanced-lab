@@ -1,0 +1,31 @@
+2026-08-01 09:00:00 INFO Pipeline started
+2026-08-01 09:00:03 INFO Source file discovered
+2026-08-01 09:00:06 INFO Header validation started
+2026-08-01 09:00:08 INFO Header validation passed
+2026-08-01 09:00:10 INFO Row count validation started
+2026-08-01 09:00:12 WARN One record requires review
+2026-08-01 09:00:14 INFO Completeness check started
+2026-08-01 09:00:16 ERROR Validation step failed for one sample record
+2026-08-01 09:00:18 INFO Review file created
+2026-08-01 09:00:20 INFO Pipeline completed with review items
+2026-08-02 09:00:00 INFO Pipeline started
+2026-08-02 09:00:02 INFO Source file discovered
+2026-08-02 09:00:04 INFO Header validation passed
+2026-08-02 09:00:06 INFO Row count validation passed
+2026-08-02 09:00:08 INFO Completeness check passed
+2026-08-02 09:00:10 WARN Late-arriving record detected
+2026-08-02 09:00:12 INFO Duplicate check started
+2026-08-02 09:00:14 INFO Duplicate check passed
+2026-08-02 09:00:16 INFO Pipeline completed
+2026-08-03 09:00:00 INFO Pipeline started
+2026-08-03 09:00:02 INFO Source file discovered
+2026-08-03 09:00:04 WARN Header contains optional column
+2026-08-03 09:00:06 INFO Header validation passed
+2026-08-03 09:00:08 INFO Row count validation passed
+2026-08-03 09:00:10 ERROR Example validation failure in sample data
+2026-08-03 09:00:12 INFO Exception output prepared
+2026-08-03 09:00:14 INFO Pipeline completed with review items
+2026-08-04 09:00:00 INFO Pipeline started
+2026-08-04 09:00:03 INFO Source file discovered
+2026-08-04 09:00:06 INFO Validation checks passed
+2026-08-04 09:00:09 INFO Pipeline completed

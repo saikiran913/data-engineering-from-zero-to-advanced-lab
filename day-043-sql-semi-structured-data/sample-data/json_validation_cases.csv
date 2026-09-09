@@ -1,0 +1,17 @@
+case_id,event_id,event_type,validation_type,path_or_array,expected_condition,observed_condition,issue_category,severity,review_message
+JVC001,EVT003,ORDER_CREATED,REQUIRED_PATH,customer.id,Required customer ID,Key not present,MISSING_KEY,HIGH_REVIEW,Required nested key is missing
+JVC002,EVT004,ORDER_UPDATED,NULL_REVIEW,customer.id,Required non-null customer ID,Explicit JSON null,EXPLICIT_NULL,HIGH_REVIEW,Null is different from missing key
+JVC003,EVT005,CUSTOMER_UPDATED,BLANK_REVIEW,customer.id,Required non-blank customer ID,Empty string,BLANK_VALUE,HIGH_REVIEW,Blank string requires separate review
+JVC004,EVT007,ORDER_CREATED,TYPE_REVIEW,order.amount,Numeric amount,Text not_available,INVALID_NUMBER,HIGH_REVIEW,Amount cannot be treated as valid number
+JVC005,EVT008,ORDER_CREATED,DATE_REVIEW,order.date,ISO date text,2026-99-99,INVALID_DATE,HIGH_REVIEW,Date-like text is invalid
+JVC006,EVT009,ORDER_UPDATED,VALUE_REVIEW,order.status,Supported status,UNKNOWN,UNSUPPORTED_VALUE,REVIEW,Status value is not in expected list
+JVC007,EVT010,ORDER_CREATED,SCHEMA_DRIFT,customer.id,Path customer.id,Found customer.customer_id,POSSIBLE_RENAME,HIGH_REVIEW,Possible renamed nested key
+JVC008,EVT012,ORDER_CREATED,ARRAY_ELEMENT,items[].product_code,Required item product code,Null product code,ARRAY_ELEMENT_MISSING_KEY,HIGH_REVIEW,Item element is missing required product code
+JVC009,EVT015,ORDER_CREATED,DATE_REVIEW,order.date,ISO date text,bad-date,INVALID_DATE,HIGH_REVIEW,Date text is not parseable
+JVC010,EVT016,ORDER_UPDATED,NULL_REVIEW,order.status,Required status,Explicit JSON null,EXPLICIT_NULL,HIGH_REVIEW,Required status is null
+JVC011,EVT017,PRODUCT_VIEWED,ARRAY_REVIEW,tags,Optional tags array,Empty array,VALID_OPTIONAL_EMPTY_ARRAY,INFO,Empty optional array is acceptable
+JVC012,EVT020,ORDER_CREATED,ARRAY_ELEMENT,items[].product_code,Required item product code,Key not present,ARRAY_ELEMENT_MISSING_KEY,HIGH_REVIEW,Item element lacks product code
+JVC013,EVT023,PRODUCT_VIEWED,SCHEMA_REVIEW,experiment.id,No expected path,Unexpected extra key,UNEXPECTED_KEY,REVIEW,Unexpected nested key should be reviewed
+JVC014,EVT024,ORDER_CREATED,PAYLOAD_REVIEW,payload_text,Valid JSON syntax,Malformed payload,MALFORMED_JSON,HIGH_REVIEW,Malformed payload should be separated before business validation
+JVC015,EVT001,ORDER_CREATED,NO_ISSUE,customer.id,Required customer ID,Present valid value,VALID,INFO,No issue for this path
+JVC016,EVT011,PRODUCT_VIEWED,OPTIONAL_PATH,customer.country,Optional for product viewed,Missing key,VALID_OPTIONAL_MISSING,INFO,Optional missing field is acceptable

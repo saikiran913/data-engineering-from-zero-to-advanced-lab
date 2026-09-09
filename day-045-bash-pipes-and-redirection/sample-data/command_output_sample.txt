@@ -1,0 +1,6 @@
+INFO Source file found
+INFO Row count completed
+WARN Review item detected
+ERROR Example validation failure
+INFO Exception file prepared
+INFO Pipeline summary completed

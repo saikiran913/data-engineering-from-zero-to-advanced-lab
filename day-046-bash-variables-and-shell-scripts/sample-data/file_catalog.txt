@@ -1,0 +1,4 @@
+sample-data/customers_sample.csv
+sample-data/orders_sample.csv
+sample-data/pipeline_log.txt
+sample-data/status_values.txt

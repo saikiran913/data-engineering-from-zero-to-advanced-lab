@@ -1,0 +1,24 @@
+2026-08-01 09:00:00 INFO Pipeline started
+2026-08-01 09:00:02 INFO Source file discovered
+2026-08-01 09:00:04 INFO Header validation started
+2026-08-01 09:00:05 INFO Header validation passed
+2026-08-01 09:00:07 INFO Row count validation started
+2026-08-01 09:00:08 INFO Row count validation passed
+2026-08-01 09:00:10 INFO Completeness check started
+2026-08-01 09:00:12 WARN One review record detected
+2026-08-01 09:00:14 INFO Duplicate check started
+2026-08-01 09:00:16 INFO Duplicate check passed
+2026-08-01 09:00:18 INFO Staging load started
+2026-08-01 09:00:22 INFO Staging load completed
+2026-08-01 09:00:24 INFO Summary report created
+2026-08-01 09:00:26 INFO Pipeline completed
+2026-08-02 09:00:00 INFO Pipeline started
+2026-08-02 09:00:03 INFO Source file discovered
+2026-08-02 09:00:05 INFO Header validation passed
+2026-08-02 09:00:07 INFO Row count validation passed
+2026-08-02 09:00:09 INFO Completeness check passed
+2026-08-02 09:00:11 INFO Duplicate check passed
+2026-08-02 09:00:14 INFO Staging load completed
+2026-08-02 09:00:16 WARN Late-arriving record detected
+2026-08-02 09:00:18 INFO Summary report created
+2026-08-02 09:00:20 INFO Pipeline completed

@@ -131,6 +131,5 @@ All executable SQL is read-only. Performance rewrites must preserve results. No 
 ## Navigation
 
 - Previous Day: [Day 041 - SQL Query Plans for Beginners](../day-041-sql-query-plans-for-beginners/)
-- Next Day: Day 043 - SQL Performance Review: Query Shape, Repeated Scans, Join Growth, Sorting, and Validation-First Optimization - Coming Soon
+- Next Day: [Day 043 - SQL for Semi-Structured Data](../day-043-sql-semi-structured-data/)
 - [Back to Main Learning Path](../README.md)
-

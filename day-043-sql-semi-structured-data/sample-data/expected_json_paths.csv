@@ -1,0 +1,19 @@
+path_id,event_type,json_path,required_flag,expected_value_type,expected_array_flag,business_meaning,severity
+PATH001,ORDER_CREATED,customer.id,YES,STRING,NO,Customer identifier,HIGH_REVIEW
+PATH002,ORDER_CREATED,customer.country,YES,STRING,NO,Customer country,REVIEW
+PATH003,ORDER_CREATED,order.amount,YES,NUMBER,NO,Order amount,HIGH_REVIEW
+PATH004,ORDER_CREATED,order.status,YES,STRING,NO,Order lifecycle status,HIGH_REVIEW
+PATH005,ORDER_CREATED,order.date,YES,DATE_TEXT,NO,Order business date,HIGH_REVIEW
+PATH006,ORDER_CREATED,tags,NO,ARRAY,YES,Optional classification tags,INFO
+PATH007,ORDER_CREATED,items,YES,ARRAY,YES,Order items,HIGH_REVIEW
+PATH008,ORDER_CREATED,items[].product_code,YES,STRING,NO,Item product code,HIGH_REVIEW
+PATH009,ORDER_CREATED,items[].quantity,YES,NUMBER,NO,Item quantity,HIGH_REVIEW
+PATH010,ORDER_UPDATED,customer.id,YES,STRING,NO,Customer identifier,HIGH_REVIEW
+PATH011,ORDER_UPDATED,order.status,YES,STRING,NO,Updated order status,HIGH_REVIEW
+PATH012,ORDER_UPDATED,order.date,YES,DATE_TEXT,NO,Update business date,REVIEW
+PATH013,CUSTOMER_UPDATED,customer.id,YES,STRING,NO,Customer identifier,HIGH_REVIEW
+PATH014,CUSTOMER_UPDATED,customer.active,NO,BOOLEAN,NO,Customer active flag,REVIEW
+PATH015,PRODUCT_VIEWED,customer.id,NO,STRING,NO,Optional customer identifier,INFO
+PATH016,PRODUCT_VIEWED,product.code,YES,STRING,NO,Viewed product code,REVIEW
+PATH017,PRODUCT_VIEWED,product.category,YES,STRING,NO,Viewed product category,REVIEW
+PATH018,PRODUCT_VIEWED,tags,NO,ARRAY,YES,Optional view tags,INFO

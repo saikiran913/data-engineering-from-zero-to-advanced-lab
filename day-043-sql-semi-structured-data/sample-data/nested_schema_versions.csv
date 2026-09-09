@@ -1,0 +1,21 @@
+schema_version,event_type,json_path,expected_value_type,required_flag,change_type,review_note
+V1,ORDER_CREATED,customer.id,STRING,YES,UNCHANGED,Original customer identifier path
+V2,ORDER_CREATED,customer.id,STRING,YES,UNCHANGED,Customer identifier remains expected
+V1,ORDER_CREATED,customer.country,STRING,YES,UNCHANGED,Country path in V1
+V2,ORDER_CREATED,customer.country,STRING,NO,REQUIREDNESS_CHANGED,Country became optional in V2
+V1,ORDER_CREATED,order.amount,NUMBER,YES,TYPE_CHANGED,Amount expected as number in V1
+V2,ORDER_CREATED,order.amount,STRING,YES,TYPE_CHANGED,Amount may arrive as text in V2
+V1,ORDER_CREATED,order.status,STRING,YES,UNCHANGED,Status remains required
+V2,ORDER_CREATED,order.status,STRING,YES,UNCHANGED,Status remains required
+V1,ORDER_CREATED,items,ARRAY,YES,UNCHANGED,Items array required
+V2,ORDER_CREATED,items,ARRAY,YES,UNCHANGED,Items array still required
+V1,ORDER_CREATED,discount.code,STRING,NO,REMOVED_PATH,Discount path existed in V1
+V2,ORDER_CREATED,promotion.code,STRING,NO,ADDED_PATH,New promotion path added in V2
+V1,ORDER_CREATED,customer.id,STRING,YES,POSSIBLE_RENAME,Compare with customer.customer_id events
+V2,ORDER_CREATED,customer.customer_id,STRING,YES,POSSIBLE_RENAME,Possible renamed customer identifier
+V1,CUSTOMER_UPDATED,customer.active,BOOLEAN,NO,TYPE_CHANGED,Boolean active flag
+V2,CUSTOMER_UPDATED,customer.active,STRING,NO,TYPE_CHANGED,Active may arrive as text
+V1,PRODUCT_VIEWED,tags,ARRAY,NO,SHAPE_CHANGED,Tags expected as array
+V2,PRODUCT_VIEWED,tags,OBJECT,NO,SHAPE_CHANGED,Tags shape changed in one source
+V1,PRODUCT_VIEWED,product.code,STRING,YES,UNCHANGED,Product code remains required
+V2,PRODUCT_VIEWED,product.code,STRING,YES,UNCHANGED,Product code remains required

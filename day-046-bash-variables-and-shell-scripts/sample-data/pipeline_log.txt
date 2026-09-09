@@ -1,0 +1,30 @@
+2026-08-01 09:00:00 INFO Pipeline started
+2026-08-01 09:00:03 INFO Source file discovered
+2026-08-01 09:00:06 WARN One record requires review
+2026-08-01 09:00:09 INFO Schema check started
+2026-08-01 09:00:12 ERROR Validation step failed for one sample record
+2026-08-01 09:00:15 INFO Review file prepared
+2026-08-01 09:00:18 WARN Optional field was blank
+2026-08-01 09:00:21 INFO Row count completed
+2026-08-01 09:00:24 INFO Duplicate check started
+2026-08-01 09:00:27 WARN Duplicate-looking row requires review
+2026-08-01 09:00:30 INFO Status summary created
+2026-08-01 09:00:33 ERROR Sample output path was unavailable
+2026-08-01 09:00:36 INFO Retry check started
+2026-08-01 09:00:39 INFO Retry check completed
+2026-08-01 09:00:42 WARN Late-arriving sample record detected
+2026-08-01 09:00:45 INFO File catalog reviewed
+2026-08-01 09:00:48 INFO Small data preview completed
+2026-08-01 09:00:51 ERROR Example threshold check failed
+2026-08-01 09:00:54 INFO Manual investigation requested
+2026-08-01 09:00:57 WARN Record count differs from expected sample count
+2026-08-01 09:01:00 INFO Pipeline continued after review
+2026-08-01 09:01:03 INFO Output summary printed
+2026-08-01 09:01:06 WARN One status value needs standardisation
+2026-08-01 09:01:09 INFO Temporary review completed
+2026-08-01 09:01:12 ERROR Example quality gate failed
+2026-08-01 09:01:15 INFO Quality gate result recorded
+2026-08-01 09:01:18 INFO Final count check started
+2026-08-01 09:01:21 WARN Final review contains warnings
+2026-08-01 09:01:24 INFO Pipeline completed with review items
+2026-08-01 09:01:27 INFO End of sample log
