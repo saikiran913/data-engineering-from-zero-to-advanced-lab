@@ -88,7 +88,17 @@ Over time, this repository will cover:
 | Day 048 | [Git Branching and Merging: Feature Work, Conflicts, and Safe Collaboration](day-048-git-branching-and-merging/) | Available |
 | Day 049 | [Git Remote Workflows: Clone, Fetch, Pull, Push, and Pull Request Thinking](day-049-git-remote-workflows/) | Available |
 | Day 050 | [Python for Data Engineers: Setup, Interpreter, Scripts, and Virtual Environments](day-050-python-setup-and-virtual-environments/) | Available |
-| Day 051 | Python Basics for Data Engineers: Variables, Data Types, Operators, and Simple Expressions | Coming Soon |
+| Day 051 | [Python Variables and Data Types: Numbers, Strings, Booleans, None, and Type Awareness](day-051-python-variables-and-data-types/) | Available |
+| Day 052 | [Python Conditions and Boolean Logic: Validation Rules and Decision-Making](day-052-python-conditions-and-boolean-logic/) | Available |
+| Day 053 | [Python Loops: Iterating Through Files, Records, and Validation Results](day-053-python-loops/) | Available |
+| Day 054 | [Python Functions and Scope: Reusable Transformations and Clear Interfaces](day-054-python-functions-and-scope/) | Available |
+| Day 055 | [Python Collections I: Lists, Tuples, Indexing, Slicing, and Record Sequences](day-055-python-collections-i/) | Available |
+| Day 056 | [Python Collections II: Dictionaries, Sets, Nested Data, and Lookup Patterns](day-056-python-collections-ii/) | Available |
+| Day 057 | [Python Strings for Data Engineers: Cleaning, Parsing, Formatting, and Standardisation](day-057-python-strings-for-data-engineers/) | Available |
+| Day 058 | [Python Dates and Times: Datetime Objects, Formatting, Timezones, and Comparisons](day-058-python-dates-and-times/) | Available |
+| Day 059 | [Python Filesystem Basics: pathlib, File Paths, Directories, CSV, and JSON Introductions](day-059-python-filesystem-basics/) | Available |
+| Day 060 | [Python Reliability Basics and Basic-Phase Review: Exceptions, Modules, Packages, and Reusable Scripts](day-060-python-reliability-and-basic-phase-review/) | Available |
+| Day 061 | Python Data Processing Practice: Combining Files, Collections, Functions, Dates, and Validation Rules | Coming Soon |
 
 ## Repository Philosophy
 
@@ -104,7 +114,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, Day 042, Day 043, Day 044, Day 045, Day 046, Day 047, Day 048, Day 049, and Day 050 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, Day 042, Day 043, Day 044, Day 045, Day 046, Day 047, Day 048, Day 049, Day 050, Day 051, Day 052, Day 053, Day 054, Day 055, Day 056, Day 057, Day 058, Day 059, and Day 060 are available.
 
 ## How to Use This Repository
 

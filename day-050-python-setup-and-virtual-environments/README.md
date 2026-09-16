@@ -87,5 +87,5 @@ No external dependencies are required for Day 050. Examples use standard Python 
 ## Navigation
 
 - Previous Day: [Day 049 - Git Remote Workflows](../day-049-git-remote-workflows/)
-- Next Day: Day 051 - Python Basics for Data Engineers: Variables, Data Types, Operators, and Simple Expressions - Coming Soon
+- Next Day: [Day 051 - Python Variables and Data Types](../day-051-python-variables-and-data-types/)
 - [Back to Main Learning Path](../README.md)

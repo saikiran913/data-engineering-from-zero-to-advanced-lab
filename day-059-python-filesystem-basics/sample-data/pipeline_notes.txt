@@ -1,0 +1,7 @@
+Pipeline: daily_orders
+Owner: data_platform
+Frequency: daily
+Expected source: orders_sample.csv
+Validation: row_count > 0
+Status: training_sample
+Format: CSV with a JSON configuration file

@@ -1,0 +1,17 @@
+{
+  "source_name": "orders",
+  "enabled": true,
+  "expected_format": "csv",
+  "expected_files": 1,
+  "required_columns": [
+    "order_id",
+    "customer_id",
+    "order_date",
+    "order_status",
+    "order_amount"
+  ],
+  "validation": {
+    "require_rows": true,
+    "allow_empty_order_note": true
+  }
+}
