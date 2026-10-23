@@ -1,0 +1,7 @@
+{
+  "total_rows": 12,
+  "pass_rows": 8,
+  "review_rows": 1,
+  "fail_rows": 3,
+  "source_file": "orders_input.csv"
+}

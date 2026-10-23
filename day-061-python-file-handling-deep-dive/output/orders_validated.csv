@@ -1,0 +1,13 @@
+order_id,customer_id,order_date,status,amount,order_note,validation_status,validation_reason
+ORD-1001,CUST-001,2026-09-01,COMPLETED,125.50,"Priority order, review complete",PASS,
+ORD-1002,CUST-002,2026-09-02,ready,80.00,,PASS,
+ORD-1003,CUST-003,2026-09-03, COMPLETED ,0,Standard,PASS,
+ORD-1004,CUST-004,2026-09-04,REVIEW,bad,Amount review,FAIL,invalid amount
+ORD-1005,CUST-005,2026-09-05,COMPLETED,-1,Negative sample,FAIL,negative amount
+,CUST-006,2026-09-06,READY,25.00,Missing ID,FAIL,order_id required
+ORD-1007,CUST-007,invalid-date,READY,50.00,Invalid date,PASS,
+ORD-1008,CUST-008,2026-09-08,UNKNOWN,90.00,Unsupported status,REVIEW,unexpected status
+ORD-1009,CUST-009,2026-09-09,COMPLETED,210.00,,PASS,
+ORD-1010,CUST-010,2026-09-10,READY,15.75,Standard,PASS,
+ORD-1011,CUST-011,2026-09-11,REVIEW,45.00,Review queue,PASS,
+ORD-1012,CUST-012,2026-09-12,COMPLETED,300.00,Standard,PASS,

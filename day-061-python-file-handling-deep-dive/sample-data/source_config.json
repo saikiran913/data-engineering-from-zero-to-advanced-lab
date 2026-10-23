@@ -1,0 +1,1 @@
+{"source_name":"orders","expected_format":"csv","required_columns":["order_id","customer_id","order_date","status","amount"],"allowed_statuses":["READY","COMPLETED","REVIEW"],"minimum_amount":0,"allow_blank_order_note":true}

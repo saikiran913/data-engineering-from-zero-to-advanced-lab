@@ -1,0 +1,8 @@
+Pipeline: daily_orders
+Source: orders_input.csv
+Expected format: CSV
+Expected status values: READY, COMPLETED, REVIEW
+Validation: order_id required
+Validation: amount must be numeric and non-negative
+Mode: training_sample
+Output: generated files only

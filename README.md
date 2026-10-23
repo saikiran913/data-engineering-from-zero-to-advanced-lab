@@ -98,7 +98,17 @@ Over time, this repository will cover:
 | Day 058 | [Python Dates and Times: Datetime Objects, Formatting, Timezones, and Comparisons](day-058-python-dates-and-times/) | Available |
 | Day 059 | [Python Filesystem Basics: pathlib, File Paths, Directories, CSV, and JSON Introductions](day-059-python-filesystem-basics/) | Available |
 | Day 060 | [Python Reliability Basics and Basic-Phase Review: Exceptions, Modules, Packages, and Reusable Scripts](day-060-python-reliability-and-basic-phase-review/) | Available |
-| Day 061 | Python Data Processing Practice: Combining Files, Collections, Functions, Dates, and Validation Rules | Coming Soon |
+| Day 061 | [Python File Handling Deep Dive: Text, CSV, JSON, and Context Managers](day-061-python-file-handling-deep-dive/) | Available |
+| Day 062 | [Python Functions for Pipelines: Parameters, Return Values, Pure Logic, and Reuse](day-062-python-functions-for-pipelines/) | Available |
+| Day 063 | [Python Comprehensions, Sorting, and Data Transformation Patterns](day-063-python-comprehensions-sorting-transformations/) | Available |
+| Day 064 | [Python Iterators and Generators: Memory-Aware Record Processing](day-064-python-iterators-generators/) | Available |
+| Day 065 | [Python Classes and Dataclasses: Data Records, Configuration, and Pipeline Components](day-065-python-classes-dataclasses/) | Available |
+| Day 066 | [Python Type Hints, Docstrings, and Maintainable Data Engineering Code](day-066-python-type-hints-docstrings-maintainability/) | Available |
+| Day 067 | [Python Logging Fundamentals: Levels, Context, and Pipeline Diagnostics](day-067-python-logging-fundamentals/) | Available |
+| Day 068 | [Python Configuration Management: Environment Variables, Config Files, and Safe Defaults](day-068-python-configuration-management/) | Available |
+| Day 069 | [Python Error Handling for Pipelines: Clear Failures, Retries, and Recoverable Errors](day-069-python-error-handling-for-pipelines/) | Available |
+| Day 070 | [Python Testing Fundamentals with pytest: Assertions, Discovery, and Test Structure](day-070-python-testing-with-pytest/) | Available |
+| Day 071 | Python Testing Practice: Fixtures, Parametrization, and Data Pipeline Edge Cases | Coming Soon |
 
 ## Repository Philosophy
 
@@ -114,7 +124,7 @@ The goal is not only to learn tools. The goal is to understand how data moves, h
 
 ## Current Progress
 
-Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, Day 042, Day 043, Day 044, Day 045, Day 046, Day 047, Day 048, Day 049, Day 050, Day 051, Day 052, Day 053, Day 054, Day 055, Day 056, Day 057, Day 058, Day 059, and Day 060 are available.
+Day 001, Day 002, Day 003, Day 004, Day 005, Day 006, Day 007, Day 008, Day 009, Day 010, Day 011, Day 012, Day 013, Day 014, Day 015, Day 016, Day 017, Day 018, Day 019, Day 020, Day 021, Day 022, Day 023, Day 024, Day 025, Day 026, Day 027, Day 028, Day 029, Day 030, Day 031, Day 032, Day 033, Day 034, Day 035, Day 036, Day 037, Day 038, Day 039, Day 040, Day 041, Day 042, Day 043, Day 044, Day 045, Day 046, Day 047, Day 048, Day 049, Day 050, Day 051, Day 052, Day 053, Day 054, Day 055, Day 056, Day 057, Day 058, Day 059, Day 060, Day 061, Day 062, Day 063, Day 064, Day 065, Day 066, Day 067, Day 068, Day 069, and Day 070 are available.
 
 ## How to Use This Repository
 

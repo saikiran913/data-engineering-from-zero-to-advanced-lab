@@ -1,0 +1,8 @@
+{
+  "source_name": "demo_orders",
+  "batch_size": 50,
+  "mode": "validation",
+  "enabled": true,
+  "max_retries": 2,
+  "allowed_statuses": ["READY", "COMPLETED", "REVIEW"]
+}

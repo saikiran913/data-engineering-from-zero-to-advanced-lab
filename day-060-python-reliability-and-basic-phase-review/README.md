@@ -23,5 +23,5 @@ Learn syntax/runtime/logical errors, exceptions, narrow `try`/`except`, `else`, 
 ## Navigation
 
 - Previous Day: [Day 059 - Python Filesystem Basics](../day-059-python-filesystem-basics/)
-- Next Day: Day 061 - Python Data Processing Practice: Combining Files, Collections, Functions, Dates, and Validation Rules - Coming Soon
+- Next Day: [Day 061 - Python File Handling Deep Dive](../day-061-python-file-handling-deep-dive/)
 - [Back to Main Learning Path](../README.md)
